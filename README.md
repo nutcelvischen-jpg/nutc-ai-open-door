@@ -1,44 +1,79 @@
 # 國立臺中科技大學「打開另一扇門：AI 跨界造物」校務發展計畫
 
-> **線上藍圖網頁**：[https://drchunchihchen.github.io/nutc-ai-open-door/](https://drchunchihchen.github.io/nutc-ai-open-door/)
+> **線上藍圖網頁（MUJI 米白版 · 即時預覽）**：[https://raw.githack.com/nutcelvischen-jpg/nutc-ai-open-door/main/docs/index.html](https://raw.githack.com/nutcelvischen-jpg/nutc-ai-open-door/main/docs/index.html)
+> **本機推播倉庫**：[`nutcelvischen-jpg/nutc-ai-open-door`](https://github.com/nutcelvischen-jpg/nutc-ai-open-door)（上游原版：[`DrChunChihChen/nutc-ai-open-door`](https://github.com/DrChunChihChen/nutc-ai-open-door)）
 > **完整計畫書**：[./PLAN.md](./PLAN.md) ｜ **分鏡設計規範**：[./Motion.md](./Motion.md) ｜ **26 格影片分鏡總覽**：[./docs/assets/sheet_zh.png](./docs/assets/sheet_zh.png)
 
-拒絕將 AI 矮化為「做簡報、寫公文」的文書加速器；以「做出過去做不出的真實作品」為最高準則，驅動 **15,600+ 師生、6 大學院、五專／四技／二技** 啟動跨界造物雙引擎。
+拒絕將 AI 矮化為「做簡報、寫公文」的文書加速器；以「**AI 跨界造物者計畫／社群**」為核心樞紐，驅動 **15,600+ 師生、6 大學院、五專／四技／二技** 同步推進「行政實戰」與「課程培育」雙軸生態。
 
 ---
 
-## 1-2-3 雙引擎核心架構圖
+## 一、 計畫總體架構圖（1 核心 × 雙軸驅動 × 成果閉環）
 
 ```mermaid
 flowchart TB
-    HUB["<b>1 HUB｜AI 跨界造物者社群 (AI Builders Guild)</b><br/>跨 6 大學院 8–12 位自費實戰派教師<br/>✕ 禁靜態 PPT ・ ✕ 禁純論文 ・ ✓ 每月 30m Live Build Demo"]
+    HUB["<b>1 HUB｜AI 跨界造物者計畫／社群 (AI Builders Guild)</b><br/>跨 6 大學院 8–12 位自費重度實戰派教師<br/>✕ 禁靜態 PPT ・ ✕ 禁純論文 ・ ✓ 每月 30m Live Build Demo"]
 
-    HUB -->|"《AI 造物實戰情報》與品管指導"| E1
-    HUB -->|"「3 小時外掛挑戰包」"| E2
+    HUB -->|"技術指導與資安品管"| A1
+    HUB -->|"標準化外掛教案包・沙盒算力・TA 協作"| A2
 
-    subgraph E1["ENGINE 1｜行政落地：系辦 × iPAS 微軟體特攻隊"]
+    subgraph A1["AXIS 1｜行政實戰軸：系辦 × iPAS 微軟體特攻隊"]
         direction LR
-        P1["系辦單一重複痛點<br/>(每週 ≥ 2hr 雜務)"] --> P2["資安沙盒雙人進駐<br/>(資流生 + 該系 iPAS 生)"] --> P3["微軟體交付上線<br/>(RAG/Flow · 工時 -70%)"]
+        P1["系辦單一重複痛點<br/>(每週 ≥ 2hr 雜務)"] --> P2["資安沙盒雙人進駐<br/>(資流生 + 該系 iPAS 生)"] --> P3["微軟體交付上線<br/>(RAG/Flow · 省時 -70%)"]
     end
 
-    subgraph E2["ENGINE 2｜教學擴散：三學制 3 小時跨門挑戰（不改 18 學分課綱）"]
+    subgraph A2["AXIS 2｜課程培育軸：學校課程三層導入培育（不動 18 學分課綱）"]
         direction LR
-        T1["五專部<br/>3D 空間視覺 × 互動程式"]
-        T2["四技部<br/>畢業專題產品化 × iPAS"]
-        T3["二技部<br/>職場自動化 Agent 管線"]
+        L1["L1 通識／院基礎<br/>3 小時外掛破冰"] --> L2["L2 系專業選修<br/>6–9h 模組 ＋ iPAS"] --> L3["L3 大三大四專題<br/>6 週真實場域駐點"]
     end
 
-    E1 <-->|"場域互通 × iPAS 人才共育"| E2
-    E1 -->|"工時減負實證 (-70%)"| LOOP
-    E2 -->|"真實運作作品集"| LOOP
+    A1 <-->|"iPAS 人才 ⇄ 真實場域互鎖"| A2
+    A1 -->|"系辦實測工時 -70% 數據"| LOOP
+    A2 -->|"三學制真實作品與證照"| LOOP
 
-    LOOP["<b>3 CLOSED LOOP｜成果驗證 × 算力激勵 × 產學外溢</b><br/>全校跨界造物大賞（拒收靜態 PPT）→ 以真實作品換取旗艦模型額度 → 複製至臺中在地 SME 數位轉型"]
-    LOOP -.->|"痛點與實戰情報反哺"| HUB
+    LOOP["<b>3 OUTCOMES & CLOSED LOOP｜最終成果 × 算力激勵 × 產學外溢</b><br/>學生作品集＆證照 ＋ 系辦減負＆課程升級 → 以真實作品換旗艦算力 → 複製至臺中 SME 轉型"]
+    LOOP -.->|"場域痛點與實戰教案反哺"| HUB
 ```
 
 ---
 
-## 行政端 6 週資安沙盒改造流水線
+## 二、 學校課程培育導入架構圖（怎麼導入 → 細部導入 → 最終成果）
+
+針對非電資為主體、專業學分滿載的體質，採取「**三層無痛嵌入 × 課堂 4 步 SOP ＋ TA 隨班協作 × 三學制差異化產出**」：
+
+```mermaid
+flowchart LR
+    subgraph ENTRY["1. 怎麼導入｜三層無痛嵌入（不改 18 學分課綱）"]
+        direction TB
+        E_L1["<b>L1 廣度啟蒙｜通識／院基礎必修</b><br/>嵌入 1 週（3 小時）即插即用外掛包<br/>取代 1 次期中報告，原教師零重備"]
+        E_L2["<b>L2 專業深化｜六院系專業選修</b><br/>嵌入 2–3 週（6–9 小時）造物模組<br/>商管BI／設計3D／語文Agent／醫護流程 ＋ iPAS"]
+        E_L3["<b>L3 實戰落地｜大三／大四畢業專題</b><br/>導入 6 週場域駐點專題<br/>直接對接軸一系辦或在地企業痛點"]
+    end
+
+    subgraph DETAIL["2. 細部導入｜課堂 4 步 SOP × 三學制分流"]
+        direction TB
+        SOP["<b>課堂內 4 步執行機制（免單打獨鬥）</b><br/>0. 課前領取標準教案、沙盒 API 與去敏資料<br/>1. 第 1 小時：Live Demo 破題鎖定本科系 1 個痛點<br/>2. 第 2 小時：雙師／iPAS 助教 (TA) 隨班協作除錯<br/>3. 第 3 小時：現場發布網址/Repo/影音試玩互評"]
+        TRK["<b>依三學制體質差異化任務</b><br/>• 五專部：AI 3D 建模、動態海報、互動網頁小遊戲<br/>• 四技部：系辦/產業微軟體原型 ＋ iPAS 國家證照<br/>• 二技部：商管自動報表、多語客服、醫護衛教 Agent"]
+    end
+
+    subgraph OUT["3. 最終希望成果｜三維度可驗證產出"]
+        direction TB
+        O_STU["<b>學生培育成果</b><br/>100% 交付可運作作品集（禁靜態 PPT）<br/>取得 iPAS 證照與真實組織改造履歷"]
+        O_TEA["<b>教師與課程成果</b><br/>零學分擠壓完成 6 院跨界課程微升級<br/>沉澱全校共享《外掛教案庫》與 TA 團"]
+        O_SCH["<b>校務與產學成果</b><br/>系辦重複工時 -70% ＋ 作品換旗艦算力<br/>成熟模式對外承接臺中 SME 數位轉型"]
+    end
+
+    E_L1 -->|"3h 外掛包"| SOP
+    E_L2 -->|"6–9h 模組"| SOP
+    E_L3 -->|"6 週駐點"| TRK
+    SOP --> O_STU
+    SOP --> O_TEA
+    TRK --> O_SCH
+```
+
+---
+
+## 三、 行政端 6 週資安沙盒改造流水線（軸一細部落地）
 
 ```mermaid
 flowchart LR
@@ -53,24 +88,24 @@ flowchart LR
 
 ---
 
-## 中部各校策略定位對比
+## 四、 中部各校策略定位對比
 
-| 校別 | 他校模式 | 核心特徵 | 臺中科大「跨界造物雙引擎」破局對應 |
+| 校別 | 他校模式 | 核心特徵 | 臺中科大「跨界造物雙軸引擎」破局對應 |
 | :--- | :--- | :--- | :--- |
 | **東海大學** | 重算力基地 | 高資本硬體中心與長期採購 | 不打硬體軍備戰，採國內代理商統編授權租賃雲端前沿池 |
 | **暨南大學** | Astra 平台額度 | 統一平台帳號全面配發 | 廢除無門檻大放送，改「以真實作品換旗艦算力額度」 |
-| **雲林科技大學** | AI4BI 18 學分 | 完整 18 學分跨院微學程 | 不擠壓滿載學分，拆解為「3 小時 Plug-and-Play 跨門外掛」 |
+| **雲林科技大學** | AI4BI 18 學分 | 完整 18 學分跨院微學程 | 不擠壓滿載學分，拆解為「L1–L3 三層無痛導入外掛」 |
 | **逢甲大學** | 行政 AI 競賽 | 短期創意競賽導向 | 「系辦 × iPAS」雙人 6 週駐點寫成可維運微軟體，實測省時 70% |
-| **國立臺中科技大學** | **跨界造物雙引擎** | **1 樞紐 × 行政微軟體 × 三學制 3h 外掛** | **拒收靜態 PPT；交付可運行軟體、3D 空間視覺與程式影音** |
+| **國立臺中科技大學** | **1 核心 × 雙軸驅動** | **造物者核心 × 行政微軟體 × 三層課程導入** | **拒收靜態 PPT；交付可運行軟體、3D 空間視覺與程式影音** |
 
 ---
 
-## 三階段滾動路線與合規防坑
+## 五、 三階段滾動路線與合規防坑
 
 ```mermaid
 flowchart LR
     PH1["<b>Phase 1｜點火打樣期 (第 1 學期)</b><br/>• 6 院 8–12 位實戰教師成軍<br/>• 3 場全校 Live Build Demo<br/>• 3 個試點系辦微軟體上線"]
-    PH2["<b>Phase 2｜校發/深耕立項期 (第 2 學期)</b><br/>• 憑工時實測向研發/教務/深耕立項<br/>• 擴展至 6 院 12 系辦<br/>• 3h 外掛導入大三專題與通識"]
+    PH2["<b>Phase 2｜校發/深耕立項期 (第 2 學期)</b><br/>• 憑工時實測向研發/教務/深耕立項<br/>• 擴展至 6 院 12 系辦<br/>• L1–L3 外掛模組導入通識、選修與專題"]
     PH3["<b>Phase 3｜制度收割與產學外溢 (第 2 學年)</b><br/>• 全校跨界造物大賞<br/>• 作品換取旗艦模型算力額度<br/>• 承接臺中在地 SME 數位轉型案"]
 
     PH1 --> PH2 --> PH3
@@ -82,9 +117,9 @@ flowchart LR
 
 ---
 
-## 目錄與檔案結構
+## 六、 目錄與檔案結構
 
-* `docs/` — GitHub Pages 靜態藍圖網站（`index.html`、`styles.css`、`app.js`、`.nojekyll`、`assets/`）
+* `docs/` — GitHub Pages 靜態藍圖網站（MUJI 米白亮色版：`index.html`、`styles.css`、`app.js`、`.nojekyll`、`assets/`）
 * `videos/nutc_open_door/` — HTML + GSAP + Canvas 程式化動態影片專案
 * `scripts/` — 音訊合成與 `earshot` 混音管線腳本
 * [PLAN.md](./PLAN.md) — 完整校務發展計畫書

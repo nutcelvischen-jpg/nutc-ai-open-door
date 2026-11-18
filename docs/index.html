@@ -4,24 +4,24 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>國立臺中科技大學「打開另一扇門：AI 跨界造物」校務發展計畫藍圖</title>
-  <meta name="description" content="國立臺中科技大學「打開另一扇門：AI 跨界造物」校務發展計畫互動架構藍圖：1 核心造物樞紐 × 2 大實戰引擎 × 6 週資安沙盒流水線 × 三學制躍遷與國立科大合規防坑機制。">
-  <meta name="theme-color" content="#050811">
+  <meta name="description" content="國立臺中科技大學「打開另一扇門：AI 跨界造物」校務發展計畫互動架構藍圖：1 個 AI 跨界造物者計畫核心 × 行政實戰與課程培育雙軸驅動 × 三層課程導入細節與最終預期成果。">
+  <meta name="theme-color" content="#F6F3EC">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-  <a class="skip-link" href="#main">跳至主要計畫藍圖</a>
+  <a class="skip-link" href="#architecture">跳至計畫總體架構</a>
 
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="#hero" aria-label="國立臺中科技大學 打開另一扇門 首頁">
+      <a class="brand" href="#architecture" aria-label="國立臺中科技大學 打開另一扇門 首頁">
         <svg class="brand-mark" viewBox="0 0 36 36" fill="none" aria-hidden="true">
-          <rect x="2" y="2" width="32" height="32" rx="6" stroke="#38BDF8" stroke-opacity="0.45" stroke-width="1.5"/>
-          <path d="M11 30V15a7 7 0 0 1 14 0v15" stroke="#FBBF24" stroke-width="2"/>
-          <path d="M11 30V15a7 7 0 0 1 10-6.3V26l-10 4Z" fill="#FBBF24" fill-opacity="0.22" stroke="#38BDF8" stroke-width="1.4"/>
-          <circle cx="19" cy="18" r="1.6" fill="#FBBF24"/>
+          <rect x="2" y="2" width="32" height="32" rx="6" fill="#FFFFFF" stroke="#CCC4B4" stroke-width="1.5"/>
+          <path d="M11 30V15a7 7 0 0 1 14 0v15" stroke="#7F0019" stroke-width="2"/>
+          <path d="M11 30V15a7 7 0 0 1 10-6.3V26l-10 4Z" fill="#8A5A2B" fill-opacity="0.22" stroke="#2E5266" stroke-width="1.4"/>
+          <circle cx="19" cy="18" r="1.6" fill="#7F0019"/>
         </svg>
         <span class="brand-text">
           <span class="brand-title">NUTC 校務發展計畫藍圖</span>
@@ -36,36 +36,54 @@
       </button>
 
       <nav class="site-nav" id="site-nav" aria-label="計畫架構導覽">
-        <a class="nav-link is-active" href="#hero"><span class="nav-idx">01</span>影片總覽</a>
-        <a class="nav-link" href="#matrix"><span class="nav-idx">02</span>校際矩陣</a>
-        <a class="nav-link" href="#architecture"><span class="nav-idx">03</span>雙引擎架構</a>
-        <a class="nav-link" href="#pipeline"><span class="nav-idx">04</span>資安流水線</a>
-        <a class="nav-link" href="#roadmap"><span class="nav-idx">05</span>躍遷與合規</a>
+        <a class="nav-link is-active" href="#architecture"><span class="nav-idx">01</span>計畫總體架構</a>
+        <a class="nav-link" href="#curriculum"><span class="nav-idx">02</span>課程培育導入</a>
+        <a class="nav-link" href="#pipeline"><span class="nav-idx">03</span>行政沙盒實戰</a>
+        <a class="nav-link" href="#matrix"><span class="nav-idx">04</span>體質與校際定位</a>
+        <a class="nav-link" href="#roadmap"><span class="nav-idx">05</span>路線圖與合規</a>
+        <a class="nav-link" href="#film"><span class="nav-idx">06</span>概念短片</a>
       </nav>
     </div>
   </header>
 
   <main id="main">
     <!-- ══════════════════════════════════════════════════════════════════
-         SECTION 1: Hero + Embedded Film
+         COMPACT TOP BRIEF BANNER (Keeps SEC 01 Architecture Above the Fold)
          ══════════════════════════════════════════════════════════════════ -->
-    <section class="blueprint-section hero-section" id="hero">
+    <section class="top-brief-banner" aria-label="計畫核心宣示與關鍵規模">
       <div class="container">
-        <div class="hero-header">
-          <h1 class="hero-title">國立臺中科技大學 <span class="no-split">「<em>打開另一扇門</em>：AI 跨界造物」</span><span class="no-split">校務發展計畫</span></h1>
-          <p class="hero-declaration">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <path d="M12 3v18M3 12h18M5.6 5.6l12.8 12.8"/>
-            </svg>
-            <span>拒絕將 AI 矮化為簡報加速器・以「做出過去做不出的真實可用作品」啟動六學院師生跨界造物</span>
-          </p>
+        <div class="top-brief-row">
+          <div class="top-brief-copy">
+            <h1 class="hero-title">國立臺中科技大學 <span class="no-split">「<em>打開另一扇門</em>：AI 跨界造物」</span><span class="no-split">校務發展計畫</span></h1>
+            <p class="hero-declaration">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 3v18M3 12h18M5.6 5.6l12.8 12.8"/>
+              </svg>
+              <span>拒絕將 AI 矮化為簡報加速器・以「AI 跨界造物者計畫」為樞紐，啟動行政實戰 × 課程培育雙軸生態</span>
+            </p>
+          </div>
+
+          <div class="top-brief-actions">
+            <a class="btn-muji-primary" href="#curriculum">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M4 6h16M4 12h10M4 18h14"/>
+              </svg>
+              檢視課程培育導入
+            </a>
+            <a class="btn-blueprint" href="#film">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <polygon points="6 4 20 12 6 20 6 4"/>
+              </svg>
+              觀看 95 秒概念短片
+            </a>
+          </div>
         </div>
 
         <div class="kpi-strip" role="list" aria-label="計畫關鍵規模指標">
-          <div class="kpi-pill is-gold" role="listitem">
+          <div class="kpi-pill is-red" role="listitem">
             <div>
               <div class="kpi-main">15,600+ 師生</div>
-              <div class="kpi-sub">日間部・進修部實務群體</div>
+              <div class="kpi-sub">6 大學院・五專／四技／二技</div>
             </div>
             <svg class="kpi-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true">
               <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
@@ -76,8 +94,8 @@
 
           <div class="kpi-pill" role="listitem">
             <div>
-              <div class="kpi-main">6 大學院</div>
-              <div class="kpi-sub">商・設・語・資流・中護・智產</div>
+              <div class="kpi-main">1 核心 × 雙軸驅動</div>
+              <div class="kpi-sub">造物者社群 × 行政＋課程軸</div>
             </div>
             <svg class="kpi-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true">
               <polygon points="12 2 21 7 21 17 12 22 3 17 3 7 12 2"/>
@@ -85,10 +103,10 @@
             </svg>
           </div>
 
-          <div class="kpi-pill" role="listitem">
+          <div class="kpi-pill is-indigo" role="listitem">
             <div>
-              <div class="kpi-main">五專/四技/二技</div>
-              <div class="kpi-sub">三學制 3 小時精準外掛切入</div>
+              <div class="kpi-main">三層課程無痛導入</div>
+              <div class="kpi-sub">不動 18 學分課綱・即插即用</div>
             </div>
             <svg class="kpi-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true">
               <path d="M4 19h16M6 19V7l6-4 6 4v12"/>
@@ -106,521 +124,221 @@
             </svg>
           </div>
         </div>
-
-        <article class="plate" aria-label="計畫概念影片展示舞台">
-          <div class="plate-head">
-            <span class="plate-label">FIG 01 // EXECUTIVE MOTION BRIEFING</span>
-            <span class="plate-tag">1920×1080 · 30FPS · HTML/GSAP + EARSHOT DSP</span>
-          </div>
-
-          <div class="film-plate-body">
-            <div class="video-stage">
-              <video id="blueprint-film" controls preload="metadata" playsinline poster="./assets/sheet_zh.png" src="./assets/nutc_open_door_zh.mp4"></video>
-            </div>
-
-            <div class="film-rail">
-              <div class="film-specs">
-                <span class="spec-chip">純程式碼動態電影</span>
-                <span class="spec-chip">台灣華語旁白 + 程式音效</span>
-                <span class="spec-chip">7 幕結構 · 26 格關鍵分鏡</span>
-              </div>
-
-              <div class="film-actions">
-                <a class="btn-blueprint" href="./assets/sheet_zh.png" target="_blank" rel="noopener">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
-                    <rect x="3" y="3" width="18" height="18" rx="2"/>
-                    <path d="M3 9h18M9 21V9"/>
-                  </svg>
-                  檢視完整 26 格分鏡總覽圖 (sheet_zh.png)
-                </a>
-              </div>
-            </div>
-
-            <div class="scene-index" role="tablist" aria-label="影片七幕分鏡架構速覽">
-              <button class="scene-chip is-active" type="button" role="tab" aria-selected="true" data-scene="s01">
-                <span class="scene-chip-id">S01</span>
-                <span class="scene-chip-name">打破簡報思維</span>
-              </button>
-              <button class="scene-chip" type="button" role="tab" aria-selected="false" data-scene="s02">
-                <span class="scene-chip-id">S02</span>
-                <span class="scene-chip-name">三座造物工坊</span>
-              </button>
-              <button class="scene-chip" type="button" role="tab" aria-selected="false" data-scene="s03">
-                <span class="scene-chip-id">S03</span>
-                <span class="scene-chip-name">中科大體質盤點</span>
-              </button>
-              <button class="scene-chip" type="button" role="tab" aria-selected="false" data-scene="s04">
-                <span class="scene-chip-id">S04</span>
-                <span class="scene-chip-name">造物者社群鐵律</span>
-              </button>
-              <button class="scene-chip" type="button" role="tab" aria-selected="false" data-scene="s05">
-                <span class="scene-chip-id">S05</span>
-                <span class="scene-chip-name">系辦微軟體特攻</span>
-              </button>
-              <button class="scene-chip" type="button" role="tab" aria-selected="false" data-scene="s06">
-                <span class="scene-chip-id">S06</span>
-                <span class="scene-chip-name">三學制跨門挑戰</span>
-              </button>
-              <button class="scene-chip" type="button" role="tab" aria-selected="false" data-scene="s07">
-                <span class="scene-chip-id">S07</span>
-                <span class="scene-chip-name">路線圖與終局門扉</span>
-              </button>
-            </div>
-
-            <div class="scene-brief-bar" id="scene-brief-bar" aria-live="polite">
-              <span><strong>S01 //</strong> 灰暗 PPT 投影片 3D 碎裂解體 → 立體門扉開啟：破除「只用 AI 做簡報」的假轉型。</span>
-              <span class="mono">SCENE 01 / 07</span>
-            </div>
-          </div>
-        </article>
       </div>
     </section>
 
     <!-- ══════════════════════════════════════════════════════════════════
-         SECTION 2: 體質診斷與中部各校策略矩陣圖
-         ══════════════════════════════════════════════════════════════════ -->
-    <section class="blueprint-section" id="matrix">
-      <div class="container">
-        <div class="section-head">
-          <div class="section-title-wrap">
-            <span class="section-code">SEC 02</span>
-            <h2 class="section-title">體質診斷與中部各校策略矩陣圖</h2>
-          </div>
-          <p class="section-thesis">盤點中科大「非電資佔比高・三學制並行・教師教學負荷重」體質，定位與中部四校截然不同的雙引擎破局象限。</p>
-        </div>
-
-        <div class="diag-grid">
-          <!-- Left SVG: 6 Colleges Orbital Diagnosis -->
-          <article class="plate">
-            <div class="plate-head">
-              <span class="plate-label">FIG 02A // NUTC 6 大學院體質約束星圖</span>
-              <span class="plate-tag">15,600+ 師生 · 三學制</span>
-            </div>
-            <div class="svg-box">
-              <svg viewBox="0 0 560 390" role="img" aria-label="國立臺中科技大學六大學院體質約束環圖">
-                <defs>
-                  <radialGradient id="coreGlow" cx="50%" cy="50%" r="50%">
-                    <stop offset="0%" stop-color="#FBBF24" stop-opacity="0.28"/>
-                    <stop offset="70%" stop-color="#38BDF8" stop-opacity="0.10"/>
-                    <stop offset="100%" stop-color="#050811" stop-opacity="0"/>
-                  </radialGradient>
-                </defs>
-
-                <!-- Ambient center glow & orbital rings -->
-                <circle cx="280" cy="184" r="165" fill="url(#coreGlow)"/>
-                <circle cx="280" cy="184" r="134" fill="none" stroke="#38BDF8" stroke-opacity="0.28" stroke-dasharray="5 5"/>
-                <circle cx="280" cy="184" r="82" fill="none" stroke="#FBBF24" stroke-opacity="0.22" stroke-width="1"/>
-
-                <!-- Conduits from center to 6 colleges -->
-                <g stroke="#38BDF8" stroke-opacity="0.45" stroke-width="1.5">
-                  <line x1="280" y1="122" x2="280" y2="69"/>
-                  <line x1="334" y1="153" x2="396" y2="117"/>
-                  <line x1="334" y1="215" x2="396" y2="251"/>
-                  <line x1="280" y1="246" x2="280" y2="299"/>
-                  <line x1="226" y1="215" x2="164" y2="251"/>
-                  <line x1="226" y1="153" x2="164" y2="117"/>
-                </g>
-
-                <!-- Center NUTC Core -->
-                <circle cx="280" cy="184" r="62" fill="#0C1322" stroke="#FBBF24" stroke-width="2"/>
-                <text x="280" y="169" text-anchor="middle" fill="#FBBF24" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="700">NUTC CORE</text>
-                <text x="280" y="191" text-anchor="middle" fill="#F8FAFC" font-family="'Noto Serif TC', serif" font-size="18" font-weight="900">15,600+ 師生</text>
-                <text x="280" y="212" text-anchor="middle" fill="#94A3B8" font-family="'Noto Sans TC', sans-serif" font-size="12">非電資為主體</text>
-
-                <!-- 6 College Nodes -->
-                <g font-family="'Noto Sans TC', sans-serif" font-size="13" font-weight="700" text-anchor="middle">
-                  <!-- Top: 商學院 -->
-                  <rect x="212" y="30" width="136" height="38" rx="19" fill="#0F172A" stroke="#38BDF8" stroke-width="1.4"/>
-                  <text x="280" y="54" fill="#F8FAFC">商學院 · BI/財稅</text>
-
-                  <!-- Top-Right: 設計學院 -->
-                  <rect x="348" y="88" width="154" height="38" rx="19" fill="#0F172A" stroke="#38BDF8" stroke-width="1.4"/>
-                  <text x="425" y="112" fill="#F8FAFC">設計學院 · 3D/動態</text>
-
-                  <!-- Bottom-Right: 語文學院 -->
-                  <rect x="348" y="242" width="154" height="38" rx="19" fill="#0F172A" stroke="#38BDF8" stroke-width="1.4"/>
-                  <text x="425" y="266" fill="#F8FAFC">語文學院 · 多語代理</text>
-
-                  <!-- Bottom: 資訊與流通學院 -->
-                  <rect x="196" y="300" width="168" height="38" rx="19" fill="#0F172A" stroke="#34D399" stroke-width="1.6"/>
-                  <text x="280" y="324" fill="#34D399">資訊與流通學院 · iPAS</text>
-
-                  <!-- Bottom-Left: 中護健康學院 -->
-                  <rect x="52" y="242" width="160" height="38" rx="19" fill="#0F172A" stroke="#38BDF8" stroke-width="1.4"/>
-                  <text x="132" y="266" fill="#F8FAFC">中護健康學院 · 衛教</text>
-
-                  <!-- Top-Left: 智慧產業學院 -->
-                  <rect x="52" y="88" width="160" height="38" rx="19" fill="#0F172A" stroke="#38BDF8" stroke-width="1.4"/>
-                  <text x="132" y="112" fill="#F8FAFC">智慧產業學院 · 跨界</text>
-                </g>
-
-                <!-- Constraint Axis Footer -->
-                <rect x="28" y="352" width="504" height="28" rx="6" fill="#050811" stroke="#38BDF8" stroke-opacity="0.25"/>
-                <text x="280" y="370" text-anchor="middle" fill="#CBD5E1" font-family="'Noto Sans TC', sans-serif" font-size="12">
-                  體質限制：專業學分滿載 × 行政人力吃緊 × 國立採購週期長 → 必須輕量化切入
-                </text>
-              </svg>
-
-              <div class="rule-trio" aria-label="中科大策略三不原則與破局定位">
-                <div class="rule-badge">✕ 不打硬體算力軍備戰</div>
-                <div class="rule-badge">✕ 不強推 18 學分大課綱</div>
-                <div class="rule-badge">✕ 拒絕靜態簡報型 AI</div>
-                <div class="rule-badge is-breakthrough">✓ 破局定位：跨界造物雙引擎（雲端前沿池 × 3 小時外掛 × 系辦微軟體）</div>
-              </div>
-            </div>
-          </article>
-
-          <!-- Right SVG: 2D Strategic Positioning Quadrant -->
-          <article class="plate">
-            <div class="plate-head">
-              <span class="plate-label">FIG 02B // 中部五校 AI 策略定位座標象限圖</span>
-              <span class="plate-tag">AGILITY VS TANGIBLE IMPACT</span>
-            </div>
-            <div class="svg-box">
-              <svg viewBox="0 0 560 400" role="img" aria-label="中部五校 AI 策略定位象限圖：東海、暨大、雲科大、逢甲對比臺中科大破局象限">
-                <defs>
-                  <linearGradient id="nutcZone" x1="0%" y1="100%" x2="100%" y2="0%">
-                    <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.06"/>
-                    <stop offset="100%" stop-color="#FBBF24" stop-opacity="0.18"/>
-                  </linearGradient>
-                </defs>
-
-                <!-- Chart Frame -->
-                <rect x="74" y="28" width="454" height="316" rx="8" fill="#050811" stroke="#38BDF8" stroke-opacity="0.25"/>
-
-                <!-- Target Breakthrough Quadrant (Top-Right) -->
-                <rect x="301" y="28" width="227" height="158" rx="4" fill="url(#nutcZone)" stroke="#FBBF24" stroke-opacity="0.45" stroke-dasharray="4 4"/>
-                <text x="516" y="48" text-anchor="end" fill="#FBBF24" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700">NUTC 跨界造物破局區</text>
-
-                <!-- Quadrant Crosshairs -->
-                <line x1="301" y1="28" x2="301" y2="344" stroke="#94A3B8" stroke-opacity="0.32" stroke-dasharray="3 4"/>
-                <line x1="74" y1="186" x2="528" y2="186" stroke="#94A3B8" stroke-opacity="0.32" stroke-dasharray="3 4"/>
-
-                <!-- Axis Labels -->
-                <text x="301" y="368" text-anchor="middle" fill="#94A3B8" font-family="'Noto Sans TC', sans-serif" font-size="12">
-                  ← 重資產／長課綱門檻　　　導入敏捷度與低師生門檻 →
-                </text>
-                <text x="26" y="186" text-anchor="middle" fill="#94A3B8" font-family="'Noto Sans TC', sans-serif" font-size="12" transform="rotate(-90 26 186)">
-                  ↓ 單點展示・文書化　　真實作品產出 × 跨院擴散力 ↑
-                </text>
-
-                <!-- Peer Universities -->
-                <!-- 東海大學 -->
-                <g>
-                  <circle cx="138" cy="248" r="8" fill="#0F172A" stroke="#FB7185" stroke-width="2.2"/>
-                  <text x="138" y="274" text-anchor="middle" fill="#F8FAFC" font-family="'Noto Sans TC', sans-serif" font-size="13" font-weight="700">東海大學</text>
-                  <text x="138" y="292" text-anchor="middle" fill="#FDA4AF" font-family="'Noto Sans TC', sans-serif" font-size="11">重算力基地</text>
-                </g>
-
-                <!-- 雲林科技大學 -->
-                <g>
-                  <circle cx="176" cy="112" r="8" fill="#0F172A" stroke="#38BDF8" stroke-width="2.2"/>
-                  <text x="176" y="88" text-anchor="middle" fill="#F8FAFC" font-family="'Noto Sans TC', sans-serif" font-size="13" font-weight="700">雲林科技大學</text>
-                  <text x="176" y="136" text-anchor="middle" fill="#7DD3FC" font-family="'Noto Sans TC', sans-serif" font-size="11">AI4BI 18 學分</text>
-                </g>
-
-                <!-- 暨南大學 -->
-                <g>
-                  <circle cx="358" cy="284" r="8" fill="#0F172A" stroke="#38BDF8" stroke-width="2.2"/>
-                  <text x="358" y="308" text-anchor="middle" fill="#F8FAFC" font-family="'Noto Sans TC', sans-serif" font-size="13" font-weight="700">暨南大學</text>
-                  <text x="358" y="326" text-anchor="middle" fill="#7DD3FC" font-family="'Noto Sans TC', sans-serif" font-size="11">Astra 平台額度</text>
-                </g>
-
-                <!-- 逢甲大學 -->
-                <g>
-                  <circle cx="384" cy="208" r="8" fill="#0F172A" stroke="#38BDF8" stroke-width="2.2"/>
-                  <text x="410" y="205" text-anchor="start" fill="#F8FAFC" font-family="'Noto Sans TC', sans-serif" font-size="13" font-weight="700">逢甲大學</text>
-                  <text x="410" y="222" text-anchor="start" fill="#7DD3FC" font-family="'Noto Sans TC', sans-serif" font-size="11">行政 AI 競賽</text>
-                </g>
-
-                <!-- 臺中科大 (Target Hero Node) -->
-                <g>
-                  <circle cx="446" cy="86" r="22" fill="#FBBF24" fill-opacity="0.16"/>
-                  <circle cx="446" cy="86" r="11" fill="#FBBF24" stroke="#050811" stroke-width="2"/>
-                  <rect x="336" y="108" width="182" height="44" rx="8" fill="#0C1322" stroke="#FBBF24" stroke-width="1.6"/>
-                  <text x="427" y="127" text-anchor="middle" fill="#FBBF24" font-family="'Noto Serif TC', serif" font-size="14" font-weight="900">國立臺中科技大學</text>
-                  <text x="427" y="144" text-anchor="middle" fill="#34D399" font-family="'Noto Sans TC', sans-serif" font-size="11" font-weight="700">跨界造物雙引擎（輕量×實作）</text>
-                </g>
-              </svg>
-            </div>
-          </article>
-        </div>
-
-        <!-- Inter-University Strategy Matrix Table -->
-        <article class="plate">
-          <div class="matrix-controls">
-            <span class="plate-label">FIG 02C // 中部五校策略對比矩陣（點擊篩選聚焦）</span>
-            <div class="filter-pills" role="group" aria-label="矩陣篩選控制">
-              <button class="tab-btn is-active" type="button" data-matrix-filter="all">全部五校對比</button>
-              <button class="tab-btn" type="button" data-matrix-filter="infra">資源與算力路線</button>
-              <button class="tab-btn" type="button" data-matrix-filter="curriculum">教學與行政路線</button>
-              <button class="tab-btn is-gold" type="button" data-matrix-filter="nutc">僅高亮臺中科大破局</button>
-            </div>
-          </div>
-
-          <div class="matrix-scroll">
-            <table class="matrix-table" id="matrix-table">
-              <thead>
-                <tr>
-                  <th>學校</th>
-                  <th>他校既有模式</th>
-                  <th>核心運作機制</th>
-                  <th>直接複製對中科大的風險</th>
-                  <th>臺中科大「跨界造物雙引擎」破局解法</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr data-cat="infra">
-                  <td class="school-name">東海大學</td>
-                  <td><span class="pill-tag coral">重算力基地</span></td>
-                  <td>自建實體算力中心與重資本硬體設施</td>
-                  <td>國立採購流程曠日廢時・設備驗收即過時</td>
-                  <td><span class="pill-tag cyan">雲端前沿池</span> 透過國內代理商統編授權租賃前沿 API</td>
-                </tr>
-                <tr data-cat="infra">
-                  <td class="school-name">暨南大學</td>
-                  <td><span class="pill-tag cyan">Astra 平台額度</span></td>
-                  <td>統一採購通用 AI 平台額度全面發放</td>
-                  <td>無門檻大放送易淪為寫公文／聊天查詢</td>
-                  <td><span class="pill-tag gold">作品換額度</span> 廢除無門檻發放，以真實作品兌換旗艦算力</td>
-                </tr>
-                <tr data-cat="curriculum">
-                  <td class="school-name">雲林科技大學</td>
-                  <td><span class="pill-tag cyan">AI4BI 18 學分</span></td>
-                  <td>建置完整 18 學分跨領域學程模組</td>
-                  <td>擠壓專業學分・非電資教師開課門檻過高</td>
-                  <td><span class="pill-tag cyan">3 小時跨門挑戰</span> 不改 18 學分課綱，即插即用嵌入既有課</td>
-                </tr>
-                <tr data-cat="curriculum">
-                  <td class="school-name">逢甲大學</td>
-                  <td><span class="pill-tag cyan">行政 AI 競賽</span></td>
-                  <td>舉辦短期行政人員 AI 應用創意競賽</td>
-                  <td>易流於靜態簡報展示，賽後無法日常維運</td>
-                  <td><span class="pill-tag mint">6 週雙人進駐</span> 系辦×iPAS 雙人寫成微軟體・實測省時 70%</td>
-                </tr>
-                <tr class="is-nutc" data-cat="nutc">
-                  <td class="school-name">國立臺中科技大學</td>
-                  <td><span class="pill-tag gold">跨界造物雙引擎</span></td>
-                  <td>1 造物者樞紐 × 系辦微軟體 × 三學制 3h 外掛</td>
-                  <td>零核心系統更動・零個資外洩・零重硬體沉沒成本</td>
-                  <td><span class="pill-tag mint">全校造物生態</span> 禁靜態 PPT，交出可運作軟體 / 3D / 動態影音</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- ══════════════════════════════════════════════════════════════════
-         SECTION 3: 「打開另一扇門」1-2-3 雙引擎核心架構圖
+         SECTION 1: 計畫總體架構圖（1 個造物者核心 × 雙軸驅動 × 成果閉環）
          ══════════════════════════════════════════════════════════════════ -->
     <section class="blueprint-section" id="architecture">
       <div class="container">
         <div class="section-head">
           <div class="section-title-wrap">
-            <span class="section-code">SEC 03</span>
-            <h2 class="section-title">「打開另一扇門」1-2-3 雙引擎核心架構圖</h2>
+            <span class="section-code">SEC 01</span>
+            <h2 class="section-title">計畫總體架構圖：1 核心 × 雙軸驅動 × 成果閉環</h2>
           </div>
-          <p class="section-thesis">1 個跨院實戰派造物樞紐驅動 2 大實戰引擎，經由造物大賞與算力兌換構成正循環閉環。</p>
+          <p class="section-thesis">以「AI 跨界造物者計畫／社群」為實戰大腦，同步驅動「軸一：行政實戰（系辦微軟體）」與「軸二：課程培育（三層無痛導入）」，並透過真實作品驗收與算力激勵形成正循環。</p>
         </div>
 
         <article class="plate">
           <div class="arch-toolbar">
             <div class="filter-pills" role="group" aria-label="核心架構圖焦點切換">
               <button class="tab-btn is-gold is-active" type="button" data-arch-focus="all">完整 1-2-3 閉環架構</button>
-              <button class="tab-btn" type="button" data-arch-focus="hub">1 HUB 造物者社群</button>
-              <button class="tab-btn" type="button" data-arch-focus="e1">ENGINE 1 系辦特攻隊</button>
-              <button class="tab-btn" type="button" data-arch-focus="e2">ENGINE 2 三學制挑戰</button>
-              <button class="tab-btn" type="button" data-arch-focus="loop">3 閉環驗證與外溢</button>
+              <button class="tab-btn" type="button" data-arch-focus="hub">1 HUB 造物者計畫核心</button>
+              <button class="tab-btn" type="button" data-arch-focus="e1">軸一 行政實戰（系辦特攻隊）</button>
+              <button class="tab-btn" type="button" data-arch-focus="e2">軸二 課程培育（三層導入）</button>
+              <button class="tab-btn" type="button" data-arch-focus="loop">3 最終成果與閉環</button>
             </div>
             <span class="scroll-hint">← 左右滑動檢視完整架構圖 →</span>
           </div>
 
           <div class="svg-scroll-stage">
-            <svg class="arch-svg" id="core-arch-svg" viewBox="0 0 1160 640" role="img" aria-label="1 個造物樞紐、2 大實戰引擎與 3 號閉環反饋系統架構圖">
+            <svg class="arch-svg" id="core-arch-svg" viewBox="0 0 1160 660" role="img" aria-label="國立臺中科技大學 AI 跨界造物計畫總體架構圖">
               <defs>
-                <marker id="arrow-cyan" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-                  <path d="M 0 1 L 10 5 L 0 9 z" fill="#38BDF8"/>
+                <marker id="arrow-indigo" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+                  <path d="M 0 1 L 10 5 L 0 9 z" fill="#2E5266"/>
                 </marker>
-                <marker id="arrow-gold" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-                  <path d="M 0 1 L 10 5 L 0 9 z" fill="#FBBF24"/>
+                <marker id="arrow-moss" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+                  <path d="M 0 1 L 10 5 L 0 9 z" fill="#2F6349"/>
                 </marker>
-                <marker id="arrow-mint" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-                  <path d="M 0 1 L 10 5 L 0 9 z" fill="#34D399"/>
+                <marker id="arrow-ochre" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+                  <path d="M 0 1 L 10 5 L 0 9 z" fill="#8A5A2B"/>
+                </marker>
+                <marker id="arrow-red" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+                  <path d="M 0 1 L 10 5 L 0 9 z" fill="#7F0019"/>
                 </marker>
               </defs>
 
               <!-- ── Conduits / Flows ── -->
-              <!-- Hub -> Engine 1 -->
+              <!-- Hub -> Axis 1 -->
               <g class="arch-flow" data-flow="hub e1">
-                <path d="M 390 180 L 390 206 L 326 206 L 326 229" fill="none" stroke="#38BDF8" stroke-width="2" marker-end="url(#arrow-cyan)"/>
-                <rect x="292" y="194" width="134" height="22" rx="11" fill="#090E1A" stroke="#38BDF8" stroke-opacity="0.45"/>
-                <text x="359" y="209" text-anchor="middle" fill="#7DD3FC" font-family="'Noto Sans TC', sans-serif" font-size="11" font-weight="700">技術情報・品管指導</text>
+                <path d="M 380 180 L 380 206 L 320 206 L 320 230" fill="none" stroke="#2F6349" stroke-width="2" marker-end="url(#arrow-moss)"/>
+                <rect x="272" y="194" width="156" height="24" rx="12" fill="#FAF8F3" stroke="#B7D3C3"/>
+                <text x="350" y="210" text-anchor="middle" fill="#2F6349" font-family="'Noto Sans TC', sans-serif" font-size="11.5" font-weight="700">技術指導與資安品管</text>
               </g>
 
-              <!-- Hub -> Engine 2 -->
+              <!-- Hub -> Axis 2 -->
               <g class="arch-flow" data-flow="hub e2">
-                <path d="M 770 180 L 770 206 L 834 206 L 834 229" fill="none" stroke="#38BDF8" stroke-width="2" marker-end="url(#arrow-cyan)"/>
-                <rect x="734" y="194" width="136" height="22" rx="11" fill="#090E1A" stroke="#38BDF8" stroke-opacity="0.45"/>
-                <text x="802" y="209" text-anchor="middle" fill="#7DD3FC" font-family="'Noto Sans TC', sans-serif" font-size="11" font-weight="700">3 小時外掛挑戰包</text>
+                <path d="M 780 180 L 780 206 L 840 206 L 840 230" fill="none" stroke="#2E5266" stroke-width="2" marker-end="url(#arrow-indigo)"/>
+                <rect x="708" y="194" width="204" height="24" rx="12" fill="#FAF8F3" stroke="#B8CCD8"/>
+                <text x="810" y="210" text-anchor="middle" fill="#2E5266" font-family="'Noto Sans TC', sans-serif" font-size="11.5" font-weight="700">外掛教案包・沙盒算力・TA 協作</text>
               </g>
 
-              <!-- Engine 1 <-> Engine 2 Interlock -->
+              <!-- Axis 1 <-> Axis 2 Interlock -->
               <g class="arch-flow" data-flow="e1 e2">
-                <path d="M 540 338 L 620 338" fill="none" stroke="#FBBF24" stroke-width="2" marker-start="url(#arrow-gold)" marker-end="url(#arrow-gold)"/>
-                <rect x="542" y="304" width="76" height="24" rx="6" fill="#090E1A" stroke="#FBBF24" stroke-opacity="0.5"/>
-                <text x="580" y="320" text-anchor="middle" fill="#FBBF24" font-family="'Noto Sans TC', sans-serif" font-size="11" font-weight="700">場域 × iPAS</text>
+                <path d="M 532 342 L 628 342" fill="none" stroke="#8A5A2B" stroke-width="2" marker-start="url(#arrow-ochre)" marker-end="url(#arrow-ochre)"/>
+                <rect x="536" y="302" width="88" height="28" rx="6" fill="#FAF8F3" stroke="#DFC7A7"/>
+                <text x="580" y="320" text-anchor="middle" fill="#70461E" font-family="'Noto Sans TC', sans-serif" font-size="11" font-weight="700">iPAS ⇄ 場域</text>
               </g>
 
-              <!-- Engine 1 -> Loop -->
+              <!-- Axis 1 -> Loop -->
               <g class="arch-flow" data-flow="e1 loop">
-                <path d="M 326 440 L 326 483" fill="none" stroke="#34D399" stroke-width="2" marker-end="url(#arrow-mint)"/>
-                <rect x="241" y="451" width="170" height="22" rx="11" fill="#090E1A" stroke="#34D399" stroke-opacity="0.45"/>
-                <text x="326" y="466" text-anchor="middle" fill="#34D399" font-family="'Noto Sans TC', sans-serif" font-size="11" font-weight="700">系辦實測工時 -70% 數據</text>
+                <path d="M 320 450 L 320 490" fill="none" stroke="#2F6349" stroke-width="2" marker-end="url(#arrow-moss)"/>
+                <rect x="229" y="458" width="182" height="24" rx="12" fill="#FAF8F3" stroke="#B7D3C3"/>
+                <text x="320" y="474" text-anchor="middle" fill="#2F6349" font-family="'Noto Sans TC', sans-serif" font-size="11.5" font-weight="700">系辦實測工時 -70% 數據</text>
               </g>
 
-              <!-- Engine 2 -> Loop -->
+              <!-- Axis 2 -> Loop -->
               <g class="arch-flow" data-flow="e2 loop">
-                <path d="M 834 440 L 834 483" fill="none" stroke="#34D399" stroke-width="2" marker-end="url(#arrow-mint)"/>
-                <rect x="749" y="451" width="170" height="22" rx="11" fill="#090E1A" stroke="#34D399" stroke-opacity="0.45"/>
-                <text x="834" y="466" text-anchor="middle" fill="#34D399" font-family="'Noto Sans TC', sans-serif" font-size="11" font-weight="700">三學制可運作造物成品</text>
+                <path d="M 840 450 L 840 490" fill="none" stroke="#2E5266" stroke-width="2" marker-end="url(#arrow-indigo)"/>
+                <rect x="749" y="458" width="182" height="24" rx="12" fill="#FAF8F3" stroke="#B8CCD8"/>
+                <text x="840" y="474" text-anchor="middle" fill="#2E5266" font-family="'Noto Sans TC', sans-serif" font-size="11.5" font-weight="700">三學制真實作品與證照</text>
               </g>
 
               <!-- Outer Closed Loop Return Left -->
               <g class="arch-flow" data-flow="loop hub">
-                <path d="M 140 548 L 52 548 L 52 102 L 236 102" fill="none" stroke="#FBBF24" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#arrow-gold)"/>
-                <rect x="8" y="302" width="88" height="54" rx="8" fill="#090E1A" stroke="#FBBF24" stroke-opacity="0.5"/>
-                <text x="52" y="324" text-anchor="middle" fill="#FBBF24" font-family="'Noto Sans TC', sans-serif" font-size="11" font-weight="700">痛點與實戰</text>
-                <text x="52" y="343" text-anchor="middle" fill="#FBBF24" font-family="'Noto Sans TC', sans-serif" font-size="11" font-weight="700">回流社群</text>
+                <path d="M 140 562 L 54 562 L 54 100 L 204 100" fill="none" stroke="#7F0019" stroke-width="1.8" stroke-dasharray="6 4" marker-end="url(#arrow-red)"/>
+                <rect x="8" y="310" width="92" height="54" rx="6" fill="#FAF8F3" stroke="#D8B2B8"/>
+                <text x="54" y="332" text-anchor="middle" fill="#7F0019" font-family="'Noto Sans TC', sans-serif" font-size="11.5" font-weight="700">場域痛點</text>
+                <text x="54" y="351" text-anchor="middle" fill="#7F0019" font-family="'Noto Sans TC', sans-serif" font-size="11.5" font-weight="700">反哺社群</text>
               </g>
 
               <!-- Outer Closed Loop Return Right -->
               <g class="arch-flow" data-flow="loop hub">
-                <path d="M 1020 548 L 1108 548 L 1108 102 L 924 102" fill="none" stroke="#FBBF24" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#arrow-gold)"/>
-                <rect x="1064" y="302" width="88" height="54" rx="8" fill="#090E1A" stroke="#FBBF24" stroke-opacity="0.5"/>
-                <text x="1108" y="324" text-anchor="middle" fill="#FBBF24" font-family="'Noto Sans TC', sans-serif" font-size="11" font-weight="700">高階算力與</text>
-                <text x="1108" y="343" text-anchor="middle" fill="#FBBF24" font-family="'Noto Sans TC', sans-serif" font-size="11" font-weight="700">題庫反哺</text>
+                <path d="M 1020 562 L 1106 562 L 1106 100 L 956 100" fill="none" stroke="#8A5A2B" stroke-width="1.8" stroke-dasharray="6 4" marker-end="url(#arrow-ochre)"/>
+                <rect x="1060" y="310" width="92" height="54" rx="6" fill="#FAF8F3" stroke="#DFC7A7"/>
+                <text x="1106" y="332" text-anchor="middle" fill="#70461E" font-family="'Noto Sans TC', sans-serif" font-size="11.5" font-weight="700">新教案與</text>
+                <text x="1106" y="351" text-anchor="middle" fill="#70461E" font-family="'Noto Sans TC', sans-serif" font-size="11.5" font-weight="700">算力回饋</text>
               </g>
 
               <!-- ── NODE 1: 1 HUB ── -->
-              <g class="arch-node" data-node="hub" tabindex="0" role="button" aria-label="1 核心造物樞紐：AI 跨界造物者社群">
-                <rect x="240" y="24" width="680" height="156" rx="14" fill="#0C1322" stroke="#FBBF24" stroke-width="2"/>
-                <rect x="240" y="24" width="680" height="36" rx="14" fill="#FBBF24" fill-opacity="0.14"/>
-                <line x1="240" y1="60" x2="920" y2="60" stroke="#FBBF24" stroke-opacity="0.3"/>
-                <text x="264" y="47" fill="#FBBF24" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="700">1 HUB // 核心造物樞紐</text>
-                <text x="898" y="47" text-anchor="end" fill="#F8FAFC" font-family="'Noto Serif TC', serif" font-size="15" font-weight="900">AI 跨界造物者社群（AI Builders Guild）</text>
+              <g class="arch-node" data-node="hub" tabindex="0" role="button" aria-label="1 核心造物樞紐：AI 跨界造物者計畫社群">
+                <rect x="210" y="20" width="740" height="160" rx="8" fill="#FFFFFF" stroke="#7F0019" stroke-width="1.8"/>
+                <rect x="220" y="28" width="720" height="34" rx="6" fill="#FAF0F1" stroke="#D8B2B8" stroke-width="1"/>
+                <text x="236" y="50" fill="#7F0019" font-family="'JetBrains Mono', monospace" font-size="12.5" font-weight="700">1 HUB // 核心樞紐</text>
+                <text x="924" y="50" text-anchor="end" fill="#2B2927" font-family="'Noto Serif TC', serif" font-size="15.5" font-weight="900">AI 跨界造物者計畫／社群（AI Builders Guild）</text>
 
-                <text x="264" y="84" fill="#F8FAFC" font-family="'Noto Sans TC', sans-serif" font-size="14" font-weight="700">組成：跨 6 大學院招募 8～12 位自費重度實戰派教師</text>
-                <text x="898" y="84" text-anchor="end" fill="#94A3B8" font-family="'Noto Sans TC', sans-serif" font-size="12">商管BI・設計3D・語文Agent・中護衛教・資流Coding</text>
+                <text x="236" y="84" fill="#2B2927" font-family="'Noto Sans TC', sans-serif" font-size="13.5" font-weight="700">組成：跨 6 大學院招募 8–12 位自費重度實戰派教師</text>
+                <text x="924" y="84" text-anchor="end" fill="#57534E" font-family="'Noto Sans TC', sans-serif" font-size="12">商管BI・設計3D・語文Agent・中護衛教・資流Coding</text>
 
                 <!-- Iron Rule Pills -->
-                <rect x="264" y="100" width="128" height="28" rx="14" fill="#FB7185" fill-opacity="0.14" stroke="#FB7185" stroke-opacity="0.55"/>
-                <text x="328" y="119" text-anchor="middle" fill="#FDA4AF" font-family="'Noto Sans TC', sans-serif" font-size="12" font-weight="700">✕ 禁靜態 PPT</text>
+                <rect x="236" y="98" width="132" height="28" rx="14" fill="#FAF0F1" stroke="#D8B2B8"/>
+                <text x="302" y="117" text-anchor="middle" fill="#7F0019" font-family="'Noto Sans TC', sans-serif" font-size="12" font-weight="700">✕ 禁靜態 PPT</text>
 
-                <rect x="402" y="100" width="176" height="28" rx="14" fill="#FB7185" fill-opacity="0.14" stroke="#FB7185" stroke-opacity="0.55"/>
-                <text x="490" y="119" text-anchor="middle" fill="#FDA4AF" font-family="'Noto Sans TC', sans-serif" font-size="12" font-weight="700">✕ 禁純論文・空泛研習</text>
+                <rect x="378" y="98" width="184" height="28" rx="14" fill="#FAF0F1" stroke="#D8B2B8"/>
+                <text x="470" y="117" text-anchor="middle" fill="#7F0019" font-family="'Noto Sans TC', sans-serif" font-size="12" font-weight="700">✕ 禁純論文・空泛研習</text>
 
-                <rect x="588" y="100" width="310" height="28" rx="14" fill="#34D399" fill-opacity="0.14" stroke="#34D399" stroke-opacity="0.55"/>
-                <text x="743" y="119" text-anchor="middle" fill="#34D399" font-family="'Noto Sans TC', sans-serif" font-size="12" font-weight="700">✓ 每月 30 分鐘 Live Build Demo（實體＋錄影）</text>
+                <rect x="572" y="98" width="352" height="28" rx="14" fill="#EEF5F1" stroke="#B7D3C3"/>
+                <text x="748" y="117" text-anchor="middle" fill="#2F6349" font-family="'Noto Sans TC', sans-serif" font-size="12" font-weight="700">✓ 每月 30 分鐘 Live Build Demo（實體＋錄影）</text>
 
-                <text x="580" y="160" text-anchor="middle" fill="#7DD3FC" font-family="'Noto Sans TC', sans-serif" font-size="13" font-weight="600">
-                  前沿實測（Carbon/Astra・3D 生成・HTML/GSAP 製片・多步驟 Agent）→ 產出《AI 造物實戰情報》＋ 3h 外掛包
+                <rect x="236" y="138" width="688" height="28" rx="6" fill="#FAF8F3" stroke="#E3DED3"/>
+                <text x="580" y="157" text-anchor="middle" fill="#2E5266" font-family="'Noto Sans TC', sans-serif" font-size="12" font-weight="700">
+                  實測產出：《AI 造物實戰情報》＋ 資安品管指南（→ 軸一）＋ 標準化 3h/6h 外掛教案包（→ 軸二）
                 </text>
               </g>
 
-              <!-- ── NODE 2: ENGINE 1 ── -->
-              <g class="arch-node" data-node="e1" tabindex="0" role="button" aria-label="引擎一：系辦 × iPAS 微軟體特攻隊">
-                <rect x="116" y="232" width="420" height="208" rx="14" fill="#0C1322" stroke="#34D399" stroke-width="2"/>
-                <rect x="116" y="232" width="420" height="36" rx="14" fill="#34D399" fill-opacity="0.13"/>
-                <line x1="116" y1="268" x2="536" y2="268" stroke="#34D399" stroke-opacity="0.3"/>
-                <text x="134" y="255" fill="#34D399" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="700">ENGINE 1 // 行政落地</text>
-                <text x="518" y="255" text-anchor="end" fill="#F8FAFC" font-family="'Noto Serif TC', serif" font-size="14" font-weight="900">系辦 × iPAS 微軟體特攻隊</text>
+              <!-- ── NODE 2: AXIS 1 (Administrative Sandbox) ── -->
+              <g class="arch-node" data-node="e1" tabindex="0" role="button" aria-label="軸一 行政實戰軸：系辦 × iPAS 微軟體特攻隊">
+                <rect x="110" y="236" width="420" height="214" rx="8" fill="#FFFFFF" stroke="#2F6349" stroke-width="1.8"/>
+                <rect x="120" y="244" width="400" height="34" rx="6" fill="#EEF5F1" stroke="#B7D3C3" stroke-width="1"/>
+                <text x="134" y="266" fill="#2F6349" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="700">AXIS 1 // 行政實戰軸</text>
+                <text x="506" y="266" text-anchor="end" fill="#2B2927" font-family="'Noto Serif TC', serif" font-size="14" font-weight="900">系辦 × iPAS 微軟體特攻隊</text>
 
-                <!-- 3 pipeline mini-nodes inside Engine 1 -->
-                <rect x="132" y="286" width="118" height="92" rx="8" fill="#050811" stroke="#FB7185" stroke-opacity="0.45"/>
-                <text x="191" y="308" text-anchor="middle" fill="#FDA4AF" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700">INPUT</text>
-                <text x="191" y="330" text-anchor="middle" fill="#F8FAFC" font-family="'Noto Sans TC', sans-serif" font-size="12" font-weight="700">系辦單一痛點</text>
-                <text x="191" y="350" text-anchor="middle" fill="#A3B3C6" font-family="'Noto Sans TC', sans-serif" font-size="11">每週重複 ≥2hr</text>
-                <text x="191" y="366" text-anchor="middle" fill="#A3B3C6" font-family="'Noto Sans TC', sans-serif" font-size="11">法規/合約/評鑑</text>
+                <!-- 3 pipeline mini-nodes inside Axis 1 -->
+                <rect x="126" y="292" width="118" height="98" rx="6" fill="#FAF8F3" stroke="#D8B2B8"/>
+                <text x="185" y="314" text-anchor="middle" fill="#7F0019" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700">INPUT</text>
+                <text x="185" y="337" text-anchor="middle" fill="#2B2927" font-family="'Noto Sans TC', sans-serif" font-size="12.5" font-weight="700">系辦單一痛點</text>
+                <text x="185" y="357" text-anchor="middle" fill="#57534E" font-family="'Noto Sans TC', sans-serif" font-size="11">每週重複 ≥2hr</text>
+                <text x="185" y="374" text-anchor="middle" fill="#57534E" font-family="'Noto Sans TC', sans-serif" font-size="11">法規/合約/評鑑</text>
 
-                <path d="M 252 332 L 265 332" stroke="#38BDF8" stroke-width="1.8" marker-end="url(#arrow-cyan)"/>
+                <path d="M 246 341 L 259 341" stroke="#2E5266" stroke-width="1.8" marker-end="url(#arrow-indigo)"/>
 
-                <rect x="267" y="286" width="118" height="92" rx="8" fill="#050811" stroke="#38BDF8" stroke-opacity="0.5"/>
-                <text x="326" y="308" text-anchor="middle" fill="#38BDF8" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700">SANDBOX</text>
-                <text x="326" y="330" text-anchor="middle" fill="#F8FAFC" font-family="'Noto Sans TC', sans-serif" font-size="12" font-weight="700">資安雙人進駐</text>
-                <text x="326" y="350" text-anchor="middle" fill="#A3B3C6" font-family="'Noto Sans TC', sans-serif" font-size="11">資流 + 該系 iPAS</text>
-                <text x="326" y="366" text-anchor="middle" fill="#34D399" font-family="'Noto Sans TC', sans-serif" font-size="11">零個資隔離紅線</text>
+                <rect x="261" y="292" width="118" height="98" rx="6" fill="#FAF8F3" stroke="#B8CCD8"/>
+                <text x="320" y="314" text-anchor="middle" fill="#2E5266" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700">SANDBOX</text>
+                <text x="320" y="337" text-anchor="middle" fill="#2B2927" font-family="'Noto Sans TC', sans-serif" font-size="12.5" font-weight="700">資安雙人進駐</text>
+                <text x="320" y="357" text-anchor="middle" fill="#57534E" font-family="'Noto Sans TC', sans-serif" font-size="11">資流 + 該系 iPAS</text>
+                <text x="320" y="374" text-anchor="middle" fill="#7F0019" font-family="'Noto Sans TC', sans-serif" font-size="11" font-weight="700">零個資隔離紅線</text>
 
-                <path d="M 387 332 L 400 332" stroke="#34D399" stroke-width="1.8" marker-end="url(#arrow-mint)"/>
+                <path d="M 381 341 L 394 341" stroke="#2F6349" stroke-width="1.8" marker-end="url(#arrow-moss)"/>
 
-                <rect x="402" y="286" width="118" height="92" rx="8" fill="#050811" stroke="#34D399" stroke-opacity="0.55"/>
-                <text x="461" y="308" text-anchor="middle" fill="#34D399" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700">OUTPUT</text>
-                <text x="461" y="330" text-anchor="middle" fill="#F8FAFC" font-family="'Noto Sans TC', sans-serif" font-size="12" font-weight="700">微軟體上線</text>
-                <text x="461" y="350" text-anchor="middle" fill="#A3B3C6" font-family="'Noto Sans TC', sans-serif" font-size="11">RAG / Flow / Code</text>
-                <text x="461" y="366" text-anchor="middle" fill="#FBBF24" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="700">省時 -70%</text>
+                <rect x="396" y="292" width="118" height="98" rx="6" fill="#FAF8F3" stroke="#B7D3C3"/>
+                <text x="455" y="314" text-anchor="middle" fill="#2F6349" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700">OUTPUT</text>
+                <text x="455" y="337" text-anchor="middle" fill="#2B2927" font-family="'Noto Sans TC', sans-serif" font-size="12.5" font-weight="700">微軟體上線</text>
+                <text x="455" y="357" text-anchor="middle" fill="#57534E" font-family="'Noto Sans TC', sans-serif" font-size="11">RAG・自動化・Code</text>
+                <text x="455" y="376" text-anchor="middle" fill="#70461E" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="700">省時 -70%</text>
 
-                <rect x="132" y="392" width="388" height="32" rx="6" fill="#34D399" fill-opacity="0.10" stroke="#34D399" stroke-opacity="0.3"/>
-                <text x="326" y="413" text-anchor="middle" fill="#A7F3D0" font-family="'Noto Sans TC', sans-serif" font-size="12" font-weight="700">
-                  雙贏：系辦解決日常繁瑣 × iPAS 學生取得硬核企業級履歷
+                <rect x="126" y="402" width="388" height="34" rx="6" fill="#EEF5F1" stroke="#B7D3C3"/>
+                <text x="320" y="424" text-anchor="middle" fill="#2F6349" font-family="'Noto Sans TC', sans-serif" font-size="12" font-weight="700">
+                  雙贏：系辦解決日常繁瑣 × iPAS 學生取得企業級實戰履歷
                 </text>
               </g>
 
-              <!-- ── NODE 3: ENGINE 2 ── -->
-              <g class="arch-node" data-node="e2" tabindex="0" role="button" aria-label="引擎二：五專、四技、二技 3 小時跨門挑戰">
-                <rect x="624" y="232" width="420" height="208" rx="14" fill="#0C1322" stroke="#38BDF8" stroke-width="2"/>
-                <rect x="624" y="232" width="420" height="36" rx="14" fill="#38BDF8" fill-opacity="0.14"/>
-                <line x1="624" y1="268" x2="1044" y2="268" stroke="#38BDF8" stroke-opacity="0.3"/>
-                <text x="642" y="255" fill="#38BDF8" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="700">ENGINE 2 // 教學擴散</text>
-                <text x="1026" y="255" text-anchor="end" fill="#F8FAFC" font-family="'Noto Serif TC', serif" font-size="14" font-weight="900">三學制 3 小時跨門造物挑戰</text>
+              <!-- ── NODE 3: AXIS 2 (Curriculum Fostering) ── -->
+              <g class="arch-node" data-node="e2" tabindex="0" role="button" aria-label="軸二 課程培育軸：學校課程三層導入與跨門造物培育">
+                <rect x="630" y="236" width="420" height="214" rx="8" fill="#FFFFFF" stroke="#2E5266" stroke-width="1.8"/>
+                <rect x="640" y="244" width="400" height="34" rx="6" fill="#EEF4F7" stroke="#B8CCD8" stroke-width="1"/>
+                <text x="654" y="266" fill="#2E5266" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="700">AXIS 2 // 課程培育軸</text>
+                <text x="1026" y="266" text-anchor="end" fill="#2B2927" font-family="'Noto Serif TC', serif" font-size="14" font-weight="900">學校課程三層導入培育</text>
 
-                <rect x="640" y="280" width="388" height="28" rx="6" fill="#38BDF8" fill-opacity="0.10" stroke="#38BDF8" stroke-opacity="0.32"/>
-                <text x="834" y="299" text-anchor="middle" fill="#7DD3FC" font-family="'Noto Sans TC', sans-serif" font-size="12" font-weight="700">
-                  不強改 18 學分課綱 · Plug-and-Play 即插即用嵌入現有課程
+                <rect x="646" y="288" width="388" height="28" rx="6" fill="#FAF8F3" stroke="#E3DED3"/>
+                <text x="840" y="307" text-anchor="middle" fill="#2E5266" font-family="'Noto Sans TC', sans-serif" font-size="11.5" font-weight="700">
+                  不動 18 學分課綱・Plug-and-Play 漸進嵌入・iPAS 助教隨班協作
                 </text>
 
-                <!-- 3 Tracks inside Engine 2 -->
-                <rect x="640" y="320" width="122" height="104" rx="8" fill="#050811" stroke="#38BDF8" stroke-opacity="0.45"/>
-                <text x="701" y="342" text-anchor="middle" fill="#38BDF8" font-family="'Noto Serif TC', serif" font-size="15" font-weight="900">五專部</text>
-                <text x="701" y="364" text-anchor="middle" fill="#F8FAFC" font-family="'Noto Sans TC', sans-serif" font-size="12" font-weight="700">空間視覺×互動</text>
-                <text x="701" y="384" text-anchor="middle" fill="#A3B3C6" font-family="'Noto Sans TC', sans-serif" font-size="11">AI 3D 建模輔助</text>
-                <text x="701" y="402" text-anchor="middle" fill="#A3B3C6" font-family="'Noto Sans TC', sans-serif" font-size="11">動態海報・遊戲</text>
+                <!-- 3 Curriculum Layers inside Axis 2 -->
+                <rect x="646" y="326" width="122" height="110" rx="6" fill="#FAF8F3" stroke="#D8B2B8"/>
+                <text x="707" y="348" text-anchor="middle" fill="#7F0019" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700">L1 通識／基礎</text>
+                <text x="707" y="370" text-anchor="middle" fill="#2B2927" font-family="'Noto Sans TC', sans-serif" font-size="13" font-weight="700">3 小時外掛</text>
+                <text x="707" y="392" text-anchor="middle" fill="#57534E" font-family="'Noto Sans TC', sans-serif" font-size="11">1 週跨門破冰</text>
+                <text x="707" y="410" text-anchor="middle" fill="#57534E" font-family="'Noto Sans TC', sans-serif" font-size="11">3D/互動/五專啟蒙</text>
 
-                <rect x="773" y="320" width="122" height="104" rx="8" fill="#050811" stroke="#FBBF24" stroke-opacity="0.5"/>
-                <text x="834" y="342" text-anchor="middle" fill="#FBBF24" font-family="'Noto Serif TC', serif" font-size="15" font-weight="900">四技部</text>
-                <text x="834" y="364" text-anchor="middle" fill="#F8FAFC" font-family="'Noto Sans TC', sans-serif" font-size="12" font-weight="700">專題產品×iPAS</text>
-                <text x="834" y="384" text-anchor="middle" fill="#A3B3C6" font-family="'Noto Sans TC', sans-serif" font-size="11">痛點系統原型</text>
-                <text x="834" y="402" text-anchor="middle" fill="#A3B3C6" font-family="'Noto Sans TC', sans-serif" font-size="11">國家能力鑑定</text>
+                <rect x="779" y="326" width="122" height="110" rx="6" fill="#FAF8F3" stroke="#B8CCD8"/>
+                <text x="840" y="348" text-anchor="middle" fill="#2E5266" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700">L2 專業選修</text>
+                <text x="840" y="370" text-anchor="middle" fill="#2B2927" font-family="'Noto Sans TC', sans-serif" font-size="13" font-weight="700">6–9h 模組</text>
+                <text x="840" y="392" text-anchor="middle" fill="#57534E" font-family="'Noto Sans TC', sans-serif" font-size="11">系域微軟體實作</text>
+                <text x="840" y="410" text-anchor="middle" fill="#57534E" font-family="'Noto Sans TC', sans-serif" font-size="11">對接 iPAS 考訓</text>
 
-                <rect x="906" y="320" width="122" height="104" rx="8" fill="#050811" stroke="#34D399" stroke-opacity="0.48"/>
-                <text x="967" y="342" text-anchor="middle" fill="#34D399" font-family="'Noto Serif TC', serif" font-size="15" font-weight="900">二技部</text>
-                <text x="967" y="364" text-anchor="middle" fill="#F8FAFC" font-family="'Noto Sans TC', sans-serif" font-size="12" font-weight="700">職場自動化Agent</text>
-                <text x="967" y="384" text-anchor="middle" fill="#A3B3C6" font-family="'Noto Sans TC', sans-serif" font-size="11">自動報表・客服</text>
-                <text x="967" y="402" text-anchor="middle" fill="#A3B3C6" font-family="'Noto Sans TC', sans-serif" font-size="11">商設護理管線</text>
+                <rect x="912" y="326" width="122" height="110" rx="6" fill="#FAF8F3" stroke="#B7D3C3"/>
+                <text x="973" y="348" text-anchor="middle" fill="#2F6349" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700">L3 畢業專題</text>
+                <text x="973" y="370" text-anchor="middle" fill="#2B2927" font-family="'Noto Sans TC', sans-serif" font-size="13" font-weight="700">6 週場域駐點</text>
+                <text x="973" y="392" text-anchor="middle" fill="#57534E" font-family="'Noto Sans TC', sans-serif" font-size="11">系辦／職場 Agent</text>
+                <text x="973" y="410" text-anchor="middle" fill="#57534E" font-family="'Noto Sans TC', sans-serif" font-size="11">四技二技產品化</text>
               </g>
 
-              <!-- ── NODE 4: CLOSED LOOP ── -->
-              <g class="arch-node" data-node="loop" tabindex="0" role="button" aria-label="3 號閉環驗證與產學外溢機制">
-                <rect x="140" y="486" width="880" height="124" rx="14" fill="#0C1322" stroke="#FBBF24" stroke-width="2"/>
-                <rect x="140" y="486" width="880" height="32" rx="14" fill="#FBBF24" fill-opacity="0.14"/>
-                <line x1="140" y1="518" x2="1020" y2="518" stroke="#FBBF24" stroke-opacity="0.28"/>
-                <text x="162" y="507" fill="#FBBF24" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="700">3 CLOSED LOOP // 成果驗證 × 算力激勵 × 產學外溢</text>
+              <!-- ── NODE 4: 3 OUTCOMES & CLOSED LOOP ── -->
+              <g class="arch-node" data-node="loop" tabindex="0" role="button" aria-label="3 號最終成果驗證、算力激勵與產學外溢閉環">
+                <rect x="140" y="494" width="880" height="138" rx="8" fill="#FFFFFF" stroke="#8A5A2B" stroke-width="1.8"/>
+                <rect x="150" y="502" width="860" height="32" rx="6" fill="#FAF3E8" stroke="#DFC7A7" stroke-width="1"/>
+                <text x="166" y="523" fill="#70461E" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="700">3 OUTCOMES &amp; CLOSED LOOP // 最終預期成果 × 算力激勵 × 產學外溢</text>
 
-                <rect x="162" y="532" width="256" height="62" rx="8" fill="#050811" stroke="#34D399" stroke-opacity="0.45"/>
-                <text x="290" y="556" text-anchor="middle" fill="#34D399" font-family="'Noto Sans TC', sans-serif" font-size="14" font-weight="700">全校跨界造物大賞</text>
-                <text x="290" y="578" text-anchor="middle" fill="#CBD5E1" font-family="'Noto Sans TC', sans-serif" font-size="12">僅驗收可運行軟體 / Repo / 3D / 影音</text>
+                <rect x="162" y="544" width="256" height="72" rx="6" fill="#FAF8F3" stroke="#B7D3C3"/>
+                <text x="290" y="566" text-anchor="middle" fill="#2F6349" font-family="'Noto Sans TC', sans-serif" font-size="13.5" font-weight="700">學生：真實作品集 + iPAS 證照</text>
+                <text x="290" y="586" text-anchor="middle" fill="#57534E" font-family="'Noto Sans TC', sans-serif" font-size="11.5">全校造物大賞僅驗收可運行軟體／3D／影音</text>
+                <text x="290" y="604" text-anchor="middle" fill="#78716C" font-family="'Noto Sans TC', sans-serif" font-size="11">（嚴格拒收靜態 PPT 或書面報告）</text>
 
-                <path d="M 422 563 L 448 563" stroke="#FBBF24" stroke-width="2" marker-end="url(#arrow-gold)"/>
+                <path d="M 422 580 L 448 580" stroke="#8A5A2B" stroke-width="1.8" marker-end="url(#arrow-ochre)"/>
 
-                <rect x="452" y="532" width="256" height="62" rx="8" fill="#050811" stroke="#FBBF24" stroke-opacity="0.5"/>
-                <text x="580" y="556" text-anchor="middle" fill="#FBBF24" font-family="'Noto Sans TC', sans-serif" font-size="14" font-weight="700">以真實作品換旗艦算力</text>
-                <text x="580" y="578" text-anchor="middle" fill="#CBD5E1" font-family="'Noto Sans TC', sans-serif" font-size="12">廢除免費大放送 → 解鎖 Carbon/Astra</text>
+                <rect x="452" y="544" width="256" height="72" rx="6" fill="#FAF8F3" stroke="#DFC7A7"/>
+                <text x="580" y="566" text-anchor="middle" fill="#70461E" font-family="'Noto Sans TC', sans-serif" font-size="13.5" font-weight="700">校務：以真實作品換旗艦算力</text>
+                <text x="580" y="586" text-anchor="middle" fill="#57534E" font-family="'Noto Sans TC', sans-serif" font-size="11.5">系辦工時 -70% ＋ 6 院課程無痛微升級</text>
+                <text x="580" y="604" text-anchor="middle" fill="#78716C" font-family="'Noto Sans TC', sans-serif" font-size="11">（廢除無門檻發放，解鎖前沿模型額度）</text>
 
-                <path d="M 712 563 L 738 563" stroke="#38BDF8" stroke-width="2" marker-end="url(#arrow-cyan)"/>
+                <path d="M 712 580 L 738 580" stroke="#2E5266" stroke-width="1.8" marker-end="url(#arrow-indigo)"/>
 
-                <rect x="742" y="532" width="256" height="62" rx="8" fill="#050811" stroke="#38BDF8" stroke-opacity="0.5"/>
-                <text x="870" y="556" text-anchor="middle" fill="#38BDF8" font-family="'Noto Sans TC', sans-serif" font-size="14" font-weight="700">校內擴散 × 臺中 SME 產學</text>
-                <text x="870" y="578" text-anchor="middle" fill="#CBD5E1" font-family="'Noto Sans TC', sans-serif" font-size="12">微改造模式複製至中部中小企業轉型</text>
+                <rect x="742" y="544" width="256" height="72" rx="6" fill="#FAF8F3" stroke="#B8CCD8"/>
+                <text x="870" y="566" text-anchor="middle" fill="#2E5266" font-family="'Noto Sans TC', sans-serif" font-size="13.5" font-weight="700">產學：臺中在地 SME 數位轉型</text>
+                <text x="870" y="586" text-anchor="middle" fill="#57534E" font-family="'Noto Sans TC', sans-serif" font-size="11.5">將系辦練熟的微改造模式複製對外承案</text>
+                <text x="870" y="604" text-anchor="middle" fill="#78716C" font-family="'Noto Sans TC', sans-serif" font-size="11">（實戰題庫與資源回流造物者社群）</text>
               </g>
             </svg>
           </div>
@@ -630,39 +348,39 @@
             <div class="node-spec-card" data-focus="hub" tabindex="0" role="button">
               <div class="node-spec-head">
                 <span class="node-spec-code">1 HUB</span>
-                <span class="pill-tag gold">8–12 位教師</span>
+                <span class="pill-tag coral">8–12 位教師</span>
               </div>
-              <div class="node-spec-title">AI 跨界造物者社群</div>
+              <div class="node-spec-title">AI 跨界造物者計畫／社群</div>
               <ul class="spec-list">
                 <li><span class="spec-dot"></span>跨 6 學院實戰派自費重度教師</li>
                 <li><span class="spec-dot"></span>禁靜態 PPT・禁純論文空泛研習</li>
-                <li><span class="spec-dot"></span>每月 30m Live Build 產出情報與外掛包</li>
+                <li><span class="spec-dot"></span>每月 30m Live Build 輸出情報與教案包</li>
               </ul>
             </div>
 
             <div class="node-spec-card" data-focus="e1" tabindex="0" role="button">
               <div class="node-spec-head">
-                <span class="node-spec-code">ENGINE 1</span>
+                <span class="node-spec-code">AXIS 1</span>
                 <span class="pill-tag mint">-70% 工時</span>
               </div>
               <div class="node-spec-title">系辦 × iPAS 微軟體特攻隊</div>
               <ul class="spec-list">
                 <li><span class="spec-dot"></span>由最小、決策最快「系辦」切入</li>
-                <li><span class="spec-dot"></span>資流生 + 該系生雙人領工讀金駐點</li>
-                <li><span class="spec-dot"></span>不改核心系統・專攻高重複日常雜務</li>
+                <li><span class="spec-dot"></span>資流生 + 該系 iPAS 生領工讀金駐點</li>
+                <li><span class="spec-dot"></span>不改核心系統・嚴守零個資沙盒紅線</li>
               </ul>
             </div>
 
             <div class="node-spec-card" data-focus="e2" tabindex="0" role="button">
               <div class="node-spec-head">
-                <span class="node-spec-code">ENGINE 2</span>
-                <span class="pill-tag cyan">3h 外掛</span>
+                <span class="node-spec-code">AXIS 2</span>
+                <span class="pill-tag cyan">三層導入</span>
               </div>
-              <div class="node-spec-title">三學制 3 小時跨門挑戰</div>
+              <div class="node-spec-title">學校課程三層導入培育</div>
               <ul class="spec-list">
-                <li><span class="spec-dot"></span>不強改 18 學分課綱，即插即用嵌入</li>
-                <li><span class="spec-dot"></span>五專 3D 互動 / 四技專題×iPAS</li>
-                <li><span class="spec-dot"></span>二技職場自動化代理工作管線</li>
+                <li><span class="spec-dot"></span>不動 18 學分課綱，即插即用嵌入</li>
+                <li><span class="spec-dot"></span>L1 通識 3h → L2 選修 6–9h → L3 專題 6 週</li>
+                <li><span class="spec-dot"></span>五專／四技／二技差異化作品與 iPAS</li>
               </ul>
             </div>
 
@@ -671,9 +389,9 @@
                 <span class="node-spec-code">3 LOOP</span>
                 <span class="pill-tag gold">正循環</span>
               </div>
-              <div class="node-spec-title">造物大賞 × 算力激勵閉環</div>
+              <div class="node-spec-title">最終成果 × 算力激勵閉環</div>
               <ul class="spec-list">
-                <li><span class="spec-dot"></span>只驗證可運作軟體、Repo、3D 與影音</li>
+                <li><span class="spec-dot"></span>只驗收可運作軟體、Repo、3D 與影音</li>
                 <li><span class="spec-dot"></span>以真實作品換取旗艦前沿模型額度</li>
                 <li><span class="spec-dot"></span>成熟模式對外承接臺中 SME 轉型產學</li>
               </ul>
@@ -684,21 +402,334 @@
     </section>
 
     <!-- ══════════════════════════════════════════════════════════════════
-         SECTION 4: 行政端 6 週資安沙盒改造流水線圖
+         SECTION 2: 學校課程培育導入架構圖（怎麼導入 → 細部導入 → 最終成果）
+         ══════════════════════════════════════════════════════════════════ -->
+    <section class="blueprint-section" id="curriculum">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-title-wrap">
+            <span class="section-code">SEC 02</span>
+            <h2 class="section-title">學校課程培育導入架構：怎麼導入 → 細部導入 → 最終成果</h2>
+          </div>
+          <p class="section-thesis">聚焦「軸二：課程培育軸」的完整操作藍圖：如何不重寫 18 學分課綱、課堂內外如何分 4 步與 TA 隨班協作落地，以及學生、教師與學校三方最終要收割的具體成果。</p>
+        </div>
+
+        <article class="plate">
+          <div class="arch-toolbar">
+            <div class="filter-pills" role="group" aria-label="課程培育架構焦點切換">
+              <button class="tab-btn is-gold is-active" type="button" data-curr-focus="all">完整培育路徑（導入 → 細部 → 成果）</button>
+              <button class="tab-btn" type="button" data-curr-focus="entry">1. 怎麼導入（三層嵌入通道）</button>
+              <button class="tab-btn" type="button" data-curr-focus="detail">2. 細部導入（4 步 SOP × 三學制）</button>
+              <button class="tab-btn" type="button" data-curr-focus="outcome">3. 最終希望成果（三維產出）</button>
+            </div>
+            <span class="scroll-hint">← 左右滑動檢視課程導入架構圖 →</span>
+          </div>
+
+          <div class="svg-scroll-stage">
+            <svg class="arch-svg curr-svg" id="curriculum-arch-svg" viewBox="0 0 1160 600" role="img" aria-label="學校課程培育導入架構圖：怎麼導入、細部導入與最終希望成果">
+              <defs>
+                <marker id="curr-arrow-indigo" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                  <path d="M 0 1 L 10 5 L 0 9 z" fill="#2E5266"/>
+                </marker>
+                <marker id="curr-arrow-moss" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                  <path d="M 0 1 L 10 5 L 0 9 z" fill="#2F6349"/>
+                </marker>
+              </defs>
+
+              <!-- ── Orthogonal Flows Col 1 -> Col 2 ── -->
+              <g class="curr-flow" data-flow="entry detail">
+                <path d="M 316 149 L 382 149" fill="none" stroke="#2E5266" stroke-width="2" marker-end="url(#curr-arrow-indigo)"/>
+                <rect x="325" y="138" width="46" height="22" rx="11" fill="#FAF8F3" stroke="#B8CCD8"/>
+                <text x="348" y="153" text-anchor="middle" fill="#2E5266" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="700">3h 包</text>
+
+                <path d="M 316 303 L 382 303" fill="none" stroke="#2E5266" stroke-width="2" marker-end="url(#curr-arrow-indigo)"/>
+                <rect x="325" y="292" width="46" height="22" rx="11" fill="#FAF8F3" stroke="#B8CCD8"/>
+                <text x="348" y="307" text-anchor="middle" fill="#2E5266" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="700">6–9h</text>
+
+                <path d="M 316 463 L 382 463" fill="none" stroke="#2E5266" stroke-width="2" marker-end="url(#curr-arrow-indigo)"/>
+                <rect x="325" y="452" width="46" height="22" rx="11" fill="#FAF8F3" stroke="#B8CCD8"/>
+                <text x="348" y="467" text-anchor="middle" fill="#2E5266" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="700">6 週</text>
+              </g>
+
+              <!-- ── Orthogonal Flows Col 2 -> Col 3 ── -->
+              <g class="curr-flow" data-flow="detail outcome">
+                <path d="M 776 155 L 842 155" fill="none" stroke="#2F6349" stroke-width="2" marker-end="url(#curr-arrow-moss)"/>
+                <rect x="785" y="144" width="46" height="22" rx="11" fill="#FAF8F3" stroke="#B7D3C3"/>
+                <text x="808" y="159" text-anchor="middle" fill="#2F6349" font-family="'Noto Sans TC', sans-serif" font-size="10.5" font-weight="700">作品集</text>
+
+                <path d="M 776 313 L 842 313" fill="none" stroke="#2F6349" stroke-width="2" marker-end="url(#curr-arrow-moss)"/>
+                <rect x="785" y="302" width="46" height="22" rx="11" fill="#FAF8F3" stroke="#B7D3C3"/>
+                <text x="808" y="317" text-anchor="middle" fill="#2F6349" font-family="'Noto Sans TC', sans-serif" font-size="10.5" font-weight="700">教案庫</text>
+
+                <path d="M 776 471 L 842 471" fill="none" stroke="#2F6349" stroke-width="2" marker-end="url(#curr-arrow-moss)"/>
+                <rect x="785" y="460" width="46" height="22" rx="11" fill="#FAF8F3" stroke="#B7D3C3"/>
+                <text x="808" y="475" text-anchor="middle" fill="#2F6349" font-family="'Noto Sans TC', sans-serif" font-size="10.5" font-weight="700">生態圈</text>
+              </g>
+
+              <!-- ── COLUMN 1: 1. 怎麼導入 ── -->
+              <g class="curr-node" data-stage="entry" tabindex="0" role="button" aria-label="步驟一：怎麼導入，三層無痛嵌入通道">
+                <rect x="20" y="20" width="296" height="560" rx="8" fill="#FFFFFF" stroke="#7F0019" stroke-width="1.8"/>
+                <rect x="30" y="30" width="276" height="36" rx="6" fill="#FAF0F1" stroke="#D8B2B8"/>
+                <text x="168" y="53" text-anchor="middle" fill="#7F0019" font-family="'Noto Serif TC', serif" font-size="14" font-weight="900">1. 怎麼導入｜三層無痛嵌入</text>
+
+                <!-- Layer 1 -->
+                <rect x="32" y="82" width="272" height="134" rx="6" fill="#FAF8F3" stroke="#D8B2B8"/>
+                <text x="46" y="104" fill="#7F0019" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700">LEVEL 1 // 廣度啟蒙（全校通識・基礎）</text>
+                <text x="46" y="128" fill="#2B2927" font-family="'Noto Sans TC', sans-serif" font-size="13.5" font-weight="700">嵌入 1 週（3 小時）即插即用外掛</text>
+                <text x="46" y="149" fill="#57534E" font-family="'Noto Sans TC', sans-serif" font-size="11.5">• 不動 18 學分課綱，取代 1 次期中報告</text>
+                <text x="46" y="168" fill="#57534E" font-family="'Noto Sans TC', sans-serif" font-size="11.5">• 原任課教師零改課綱、零重備負擔</text>
+                <rect x="46" y="182" width="244" height="24" rx="4" fill="#FAF0F1"/>
+                <text x="168" y="198" text-anchor="middle" fill="#7F0019" font-family="'Noto Sans TC', sans-serif" font-size="11" font-weight="700">目標：破除簡報思維，做出第 1 件互動作品</text>
+
+                <!-- Layer 2 -->
+                <rect x="32" y="232" width="272" height="142" rx="6" fill="#FAF8F3" stroke="#B8CCD8"/>
+                <text x="46" y="254" fill="#2E5266" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700">LEVEL 2 // 專業深化（六院系專業選修）</text>
+                <text x="46" y="278" fill="#2B2927" font-family="'Noto Sans TC', sans-serif" font-size="13.5" font-weight="700">嵌入 2–3 週（6–9 小時）造物模組</text>
+                <text x="46" y="299" fill="#57534E" font-family="'Noto Sans TC', sans-serif" font-size="11.5">• 商管BI・設計3D・語文Agent・醫護衛教</text>
+                <text x="46" y="318" fill="#57534E" font-family="'Noto Sans TC', sans-serif" font-size="11.5">• 結合 iPAS AI 應用規劃師證照考訓</text>
+                <rect x="46" y="336" width="244" height="24" rx="4" fill="#EEF4F7"/>
+                <text x="168" y="352" text-anchor="middle" fill="#2E5266" font-family="'Noto Sans TC', sans-serif" font-size="11" font-weight="700">目標：完成系域微軟體 ＋ 取得國家認證</text>
+
+                <!-- Layer 3 -->
+                <rect x="32" y="390" width="272" height="146" rx="6" fill="#FAF8F3" stroke="#B7D3C3"/>
+                <text x="46" y="412" fill="#2F6349" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700">LEVEL 3 // 實戰落地（大三四畢業專題）</text>
+                <text x="46" y="436" fill="#2B2927" font-family="'Noto Sans TC', sans-serif" font-size="13.5" font-weight="700">導入 6 週跨院場域駐點專題</text>
+                <text x="46" y="457" fill="#57534E" font-family="'Noto Sans TC', sans-serif" font-size="11.5">• 專題直接對接「軸一系辦」或企業痛點</text>
+                <text x="46" y="476" fill="#57534E" font-family="'Noto Sans TC', sans-serif" font-size="11.5">• 資流技術生 ＋ 本系學生跨域組隊交付</text>
+                <rect x="46" y="498" width="244" height="24" rx="4" fill="#EEF5F1"/>
+                <text x="168" y="514" text-anchor="middle" fill="#2F6349" font-family="'Noto Sans TC', sans-serif" font-size="11" font-weight="700">目標：打造可日常維運與產學化的原型</text>
+
+                <text x="168" y="562" text-anchor="middle" fill="#57534E" font-family="'Noto Sans TC', sans-serif" font-size="11.5" font-weight="700">✓ 不重寫課綱，從 3 小時外掛無痛長進專題</text>
+              </g>
+
+              <!-- ── COLUMN 2: 2. 細部導入 ── -->
+              <g class="curr-node" data-stage="detail" tabindex="0" role="button" aria-label="步驟二：細部導入，課堂 4 步 SOP 與三學制分流">
+                <rect x="384" y="20" width="392" height="560" rx="8" fill="#FFFFFF" stroke="#2E5266" stroke-width="1.8"/>
+                <rect x="394" y="30" width="372" height="36" rx="6" fill="#EEF4F7" stroke="#B8CCD8"/>
+                <text x="580" y="53" text-anchor="middle" fill="#2E5266" font-family="'Noto Serif TC', serif" font-size="14" font-weight="900">2. 細部導入｜課堂 4 步 SOP × 三學制</text>
+
+                <!-- Sub-block A: 4-Step Classroom SOP -->
+                <rect x="396" y="82" width="368" height="232" rx="6" fill="#FAF8F3" stroke="#E3DED3"/>
+                <text x="410" y="104" fill="#2E5266" font-family="'Noto Sans TC', sans-serif" font-size="12.5" font-weight="700">課堂內 4 步標準落地流程（任課教師免單打獨鬥）</text>
+
+                <rect x="410" y="116" width="340" height="42" rx="5" fill="#FFFFFF" stroke="#E3DED3"/>
+                <rect x="418" y="125" width="64" height="24" rx="4" fill="#FAF0F1"/>
+                <text x="450" y="141" text-anchor="middle" fill="#7F0019" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="700">課前裝備</text>
+                <text x="490" y="141" fill="#2B2927" font-family="'Noto Sans TC', sans-serif" font-size="11.5">社群派發標準教案、沙盒 API 與去識別範例</text>
+
+                <rect x="410" y="164" width="340" height="42" rx="5" fill="#FFFFFF" stroke="#E3DED3"/>
+                <rect x="418" y="173" width="64" height="24" rx="4" fill="#EEF4F7"/>
+                <text x="450" y="189" text-anchor="middle" fill="#2E5266" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="700">第 1 小時</text>
+                <text x="490" y="189" fill="#2B2927" font-family="'Noto Sans TC', sans-serif" font-size="11.5">Live Demo 破題，鎖定本科系 1 個真實痛點</text>
+
+                <rect x="410" y="212" width="340" height="42" rx="5" fill="#FFFFFF" stroke="#E3DED3"/>
+                <rect x="418" y="221" width="64" height="24" rx="4" fill="#FAF3E8"/>
+                <text x="450" y="237" text-anchor="middle" fill="#70461E" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="700">第 2 小時</text>
+                <text x="490" y="237" fill="#2B2927" font-family="'Noto Sans TC', sans-serif" font-size="11.5">雙師或 iPAS 教學助教（TA）隨班協作除錯</text>
+
+                <rect x="410" y="260" width="340" height="42" rx="5" fill="#FFFFFF" stroke="#E3DED3"/>
+                <rect x="418" y="269" width="64" height="24" rx="4" fill="#EEF5F1"/>
+                <text x="450" y="285" text-anchor="middle" fill="#2F6349" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="700">第 3 小時</text>
+                <text x="490" y="285" fill="#2B2927" font-family="'Noto Sans TC', sans-serif" font-size="11.5">一鍵發布網址／Repo／影音，現場試玩互評</text>
+
+                <!-- Sub-block B: 3 Tracks Detail -->
+                <rect x="396" y="328" width="368" height="212" rx="6" fill="#FAF8F3" stroke="#E3DED3"/>
+                <text x="410" y="350" fill="#2E5266" font-family="'Noto Sans TC', sans-serif" font-size="12.5" font-weight="700">依五專／四技／二技體質差異化導入任務</text>
+
+                <rect x="410" y="362" width="340" height="50" rx="5" fill="#FFFFFF" stroke="#B8CCD8"/>
+                <text x="422" y="382" fill="#2E5266" font-family="'Noto Sans TC', sans-serif" font-size="12.5" font-weight="700">五專部｜視覺興趣點火</text>
+                <text x="422" y="401" fill="#57534E" font-family="'Noto Sans TC', sans-serif" font-size="11.5">AI 3D 空間建模輔助、動態海報、互動網頁小遊戲</text>
+
+                <rect x="410" y="420" width="340" height="50" rx="5" fill="#FFFFFF" stroke="#DFC7A7"/>
+                <text x="422" y="440" fill="#70461E" font-family="'Noto Sans TC', sans-serif" font-size="12.5" font-weight="700">四技部｜專題產品化 × iPAS</text>
+                <text x="422" y="459" fill="#57534E" font-family="'Noto Sans TC', sans-serif" font-size="11.5">系辦／企業痛點微軟體原型（RAG/BI）＋ iPAS 認證</text>
+
+                <rect x="410" y="478" width="340" height="50" rx="5" fill="#FFFFFF" stroke="#B7D3C3"/>
+                <text x="422" y="498" fill="#2F6349" font-family="'Noto Sans TC', sans-serif" font-size="12.5" font-weight="700">二技部｜兩年務實職場管線</text>
+                <text x="422" y="517" fill="#57534E" font-family="'Noto Sans TC', sans-serif" font-size="11.5">商管自動報表、多語商務客服、醫護衛教 Agent 流</text>
+
+                <text x="580" y="562" text-anchor="middle" fill="#57534E" font-family="'Noto Sans TC', sans-serif" font-size="11.5" font-weight="700">✓ 課中有人帶、工具雲端給，3 小時保證產出成品</text>
+              </g>
+
+              <!-- ── COLUMN 3: 3. 最終希望成果 ── -->
+              <g class="curr-node" data-stage="outcome" tabindex="0" role="button" aria-label="步驟三：最終希望成果，三維度可驗證產出">
+                <rect x="844" y="20" width="296" height="560" rx="8" fill="#FFFFFF" stroke="#2F6349" stroke-width="1.8"/>
+                <rect x="854" y="30" width="276" height="36" rx="6" fill="#EEF5F1" stroke="#B7D3C3"/>
+                <text x="992" y="53" text-anchor="middle" fill="#2F6349" font-family="'Noto Serif TC', serif" font-size="14" font-weight="900">3. 最終希望成果｜三維驗收</text>
+
+                <!-- Outcome 1: Student -->
+                <rect x="856" y="82" width="272" height="144" rx="6" fill="#FAF8F3" stroke="#B7D3C3"/>
+                <text x="870" y="104" fill="#2F6349" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700">OUTCOME 1 // 學生端培育成果</text>
+                <text x="870" y="128" fill="#2B2927" font-family="'Noto Sans TC', sans-serif" font-size="13.5" font-weight="700">可運作作品集 × iPAS 國家證照</text>
+                <text x="870" y="150" fill="#57534E" font-family="'Noto Sans TC', sans-serif" font-size="11.5">• 100% 交出網頁/Repo/3D/影音實品</text>
+                <text x="870" y="169" fill="#57534E" font-family="'Noto Sans TC', sans-serif" font-size="11.5">• 嚴格拒收靜態 PPT 或書面心得充數</text>
+                <rect x="870" y="186" width="244" height="24" rx="4" fill="#EEF5F1"/>
+                <text x="992" y="202" text-anchor="middle" fill="#2F6349" font-family="'Noto Sans TC', sans-serif" font-size="11" font-weight="700">成效：看得見、帶得走的跨域就業戰力</text>
+
+                <!-- Outcome 2: Faculty & Course -->
+                <rect x="856" y="242" width="272" height="144" rx="6" fill="#FAF8F3" stroke="#B8CCD8"/>
+                <text x="870" y="264" fill="#2E5266" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700">OUTCOME 2 // 教師與課程成果</text>
+                <text x="870" y="288" fill="#2B2927" font-family="'Noto Sans TC', sans-serif" font-size="13.5" font-weight="700">六院課程無痛微升級</text>
+                <text x="870" y="310" fill="#57534E" font-family="'Noto Sans TC', sans-serif" font-size="11.5">• 零學分擠壓即完成 6 院 AI 實戰導入</text>
+                <text x="870" y="329" fill="#57534E" font-family="'Noto Sans TC', sans-serif" font-size="11.5">• 沉澱全校共享《外掛教案庫》與 TA 團</text>
+                <rect x="870" y="346" width="244" height="24" rx="4" fill="#EEF4F7"/>
+                <text x="992" y="362" text-anchor="middle" fill="#2E5266" font-family="'Noto Sans TC', sans-serif" font-size="11" font-weight="700">回饋：教材開發費 + 教學創新點數認定</text>
+
+                <!-- Outcome 3: University & Industry -->
+                <rect x="856" y="402" width="272" height="144" rx="6" fill="#FAF8F3" stroke="#DFC7A7"/>
+                <text x="870" y="424" fill="#70461E" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700">OUTCOME 3 // 校務與產學外溢</text>
+                <text x="870" y="448" fill="#2B2927" font-family="'Noto Sans TC', sans-serif" font-size="13.5" font-weight="700">行政減負 × 算力激勵 × SME 轉型</text>
+                <text x="870" y="470" fill="#57534E" font-family="'Noto Sans TC', sans-serif" font-size="11.5">• 系辦重複雜務工時實測壓縮 -70%</text>
+                <text x="870" y="489" fill="#57534E" font-family="'Noto Sans TC', sans-serif" font-size="11.5">• 作品兌換旗艦算力，熟模式外溢中部企業</text>
+                <rect x="870" y="506" width="244" height="24" rx="4" fill="#FAF3E8"/>
+                <text x="992" y="522" text-anchor="middle" fill="#70461E" font-family="'Noto Sans TC', sans-serif" font-size="11" font-weight="700">目標：建立中科大自給自足造物生態系</text>
+
+                <text x="992" y="562" text-anchor="middle" fill="#57534E" font-family="'Noto Sans TC', sans-serif" font-size="11.5" font-weight="700">✓ 所有受補助成果須附真實連結或 Repo</text>
+              </g>
+            </svg>
+          </div>
+
+          <!-- Synchronized 3-Stage Curriculum Summary Cards -->
+          <div class="curr-stage-grid" id="curr-stage-grid">
+            <div class="node-spec-card" data-curr-stage="entry" tabindex="0" role="button">
+              <div class="node-spec-head">
+                <span class="node-spec-code">01 // 怎麼導入</span>
+                <span class="pill-tag coral">三層漸進嵌入</span>
+              </div>
+              <div class="node-spec-title">不動 18 學分課綱，即插即用</div>
+              <ul class="spec-list">
+                <li><span class="spec-dot"></span>L1 通識／院基礎：嵌入 1 週（3h）外掛包</li>
+                <li><span class="spec-dot"></span>L2 系專業選修：2–3 週（6–9h）＋ iPAS 考訓</li>
+                <li><span class="spec-dot"></span>L3 大三大四專題：6 週對接系辦或企業題</li>
+              </ul>
+            </div>
+
+            <div class="node-spec-card" data-curr-stage="detail" tabindex="0" role="button">
+              <div class="node-spec-head">
+                <span class="node-spec-code">02 // 細部導入</span>
+                <span class="pill-tag cyan">4 步 SOP + TA</span>
+              </div>
+              <div class="node-spec-title">課堂有人帶、雲端沙盒免除障</div>
+              <ul class="spec-list">
+                <li><span class="spec-dot"></span>課前領取標準教案、沙盒 API 與去敏資料</li>
+                <li><span class="spec-dot"></span>iPAS 教學助教（TA）隨班協助除錯實作</li>
+                <li><span class="spec-dot"></span>依五專／四技／二技設計專屬造物任務</li>
+              </ul>
+            </div>
+
+            <div class="node-spec-card" data-curr-stage="outcome" tabindex="0" role="button">
+              <div class="node-spec-head">
+                <span class="node-spec-code">03 // 最終成果</span>
+                <span class="pill-tag mint">實質可驗收</span>
+              </div>
+              <div class="node-spec-title">真實作品集 × 證照 × 校務減負</div>
+              <ul class="spec-list">
+                <li><span class="spec-dot"></span>學生 100% 交付可運作系統／3D／影音實品</li>
+                <li><span class="spec-dot"></span>教師低門檻升級課程並沉澱共享教案庫</li>
+                <li><span class="spec-dot"></span>以作品兌換旗艦算力，對外輸出 SME 產學</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2B: Three Tracks Detailed Breakdown Cards -->
+        <div class="subblock-title">
+          <h3>三學制課程嵌入範例與預期成果對照（五專／四技／二技）</h3>
+          <span>CURRICULUM TRACKS // EMBEDDING EXAMPLES &amp; DELIVERABLES</span>
+        </div>
+
+        <div class="leap-grid">
+          <!-- 五專部 -->
+          <article class="leap-card">
+            <div class="leap-top">
+              <span class="leap-track">五專部</span>
+              <span class="leap-trait">重視覺體驗・喜歡酷作品</span>
+            </div>
+            <div class="leap-flow">
+              <div class="leap-step">
+                <span class="leap-step-lbl">怎麼導入 // 嵌入課程範例</span>
+                <span class="leap-step-val">於低年級通識、視覺設計或資訊概論課嵌入 1 週（3 小時）外掛單元</span>
+              </div>
+              <div class="leap-arrow">細部導入：TA 帶領 AI 3D 建模與互動網頁實作</div>
+              <div class="leap-step">
+                <span class="leap-step-lbl">最終成果 // 預期交付</span>
+                <span class="leap-step-val is-after">零基礎完成 3D 空間模型、動態視覺海報與可遊玩之網頁小遊戲</span>
+              </div>
+            </div>
+            <div class="leap-tags">
+              <span class="pill-tag cyan">3D 空間視覺</span>
+              <span class="pill-tag cyan">互動小程式</span>
+              <span class="pill-tag gold">看得見・玩得到的作品集</span>
+            </div>
+          </article>
+
+          <!-- 四技部 -->
+          <article class="leap-card is-gold">
+            <div class="leap-top">
+              <span class="leap-track">四技部</span>
+              <span class="leap-trait">實務專題 × 就業備戰</span>
+            </div>
+            <div class="leap-flow">
+              <div class="leap-step">
+                <span class="leap-step-lbl">怎麼導入 // 嵌入課程範例</span>
+                <span class="leap-step-val">於大二專業選修嵌入 6–9h 模組；大三大四實務專題導入 6 週場域駐點</span>
+              </div>
+              <div class="leap-arrow">細部導入：對接系辦／企業痛點 × iPAS 證照衝刺</div>
+              <div class="leap-step">
+                <span class="leap-step-lbl">最終成果 // 預期交付</span>
+                <span class="leap-step-val is-after">交付可日常運作的微軟體系統原型（RAG/BI/檢核器）＋ iPAS 國家證照</span>
+              </div>
+            </div>
+            <div class="leap-tags">
+              <span class="pill-tag gold">畢業專題產品化</span>
+              <span class="pill-tag mint">iPAS AI 應用規劃師</span>
+              <span class="pill-tag cyan">國家級能力鑑定</span>
+            </div>
+          </article>
+
+          <!-- 二技部 -->
+          <article class="leap-card is-mint">
+            <div class="leap-top">
+              <span class="leap-track">二技部</span>
+              <span class="leap-trait">修業兩年・極度務實導向</span>
+            </div>
+            <div class="leap-flow">
+              <div class="leap-step">
+                <span class="leap-step-lbl">怎麼導入 // 嵌入課程範例</span>
+                <span class="leap-step-val">於實務研討、商務流程或臨床照護管理課嵌入 6 小時職場流程自動化單元</span>
+              </div>
+              <div class="leap-arrow">細部導入：跨系統資料串接與領域 Agent 實戰</div>
+              <div class="leap-step">
+                <span class="leap-step-lbl">最終成果 // 預期交付</span>
+                <span class="leap-step-val is-after">商管自動報表、多語商務客服、中護衛教生成等進職場即用自動化管線</span>
+              </div>
+            </div>
+            <div class="leap-tags">
+              <span class="pill-tag mint">自動報表 Agent</span>
+              <span class="pill-tag mint">多語商務客服</span>
+              <span class="pill-tag gold">進職場立即可用管線</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════════════════
+         SECTION 3: 行政端 6 週資安沙盒改造流水線圖（軸一細部落地）
          ══════════════════════════════════════════════════════════════════ -->
     <section class="blueprint-section" id="pipeline">
       <div class="container">
         <div class="section-head">
           <div class="section-title-wrap">
-            <span class="section-code">SEC 04</span>
-            <h2 class="section-title">行政端 6 週資安沙盒改造流水線圖</h2>
+            <span class="section-code">SEC 03</span>
+            <h2 class="section-title">軸一細部落地：行政端 6 週資安沙盒改造流水線</h2>
           </div>
-          <p class="section-thesis">三泳道嚴密隔離校務核心與敏感個資，以 6 週微改造 SOP 將系辦每週重複雜務壓縮 70%。</p>
+          <p class="section-thesis">三泳道嚴密隔離校務核心與敏感個資，以 6 週微改造 SOP 將系辦每週重複雜務壓縮 70%，同時提供 iPAS 學生最真實的組織專案場域。</p>
         </div>
 
         <article class="plate">
           <div class="plate-head">
-            <span class="plate-label">FIG 04 // 5-STAGE SECURITY SANDBOX SWIMLANE (W1 → W6)</span>
+            <span class="plate-label">FIG 03 // 5-STAGE SECURITY SANDBOX SWIMLANE (W1 → W6)</span>
             <span class="scroll-hint">← 左右滑動檢視 5 階段泳道 →</span>
           </div>
 
@@ -836,7 +867,7 @@
             <div class="sim-meter-panel" id="sim-meter-panel" aria-live="polite">
               <div class="sim-meta-row">
                 <div>
-                  <div class="mono" style="font-size:11px; color:var(--mint);">DELIVERABLE // 微軟體交付基準</div>
+                  <div class="mono" style="font-size:11px; color:var(--moss); font-weight:700;">DELIVERABLE // 微軟體交付基準</div>
                   <div class="sim-deliverable" id="sim-deliverable">24 小時系辦修課法規問答微軟體</div>
                 </div>
                 <div class="sim-pct" id="sim-pct">-75%</div>
@@ -866,100 +897,256 @@
     </section>
 
     <!-- ══════════════════════════════════════════════════════════════════
-         SECTION 5: 三學制躍遷圖、三階段路線圖 & 國立科大合規防坑圖卡
+         SECTION 4: 體質診斷與中部各校策略矩陣圖
+         ══════════════════════════════════════════════════════════════════ -->
+    <section class="blueprint-section" id="matrix">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-title-wrap">
+            <span class="section-code">SEC 04</span>
+            <h2 class="section-title">學校體質診斷與中部各校策略定位矩陣</h2>
+          </div>
+          <p class="section-thesis">盤點中科大「非電資佔比高・三學制並行・教師教學負荷重」體質，定位與中部四校截然不同的雙引擎破局象限。</p>
+        </div>
+
+        <div class="diag-grid">
+          <!-- Left SVG: 6 Colleges Orbital Diagnosis -->
+          <article class="plate">
+            <div class="plate-head">
+              <span class="plate-label">FIG 04A // NUTC 6 大學院體質約束星圖</span>
+              <span class="plate-tag">15,600+ 師生 · 三學制</span>
+            </div>
+            <div class="svg-box">
+              <svg viewBox="0 0 560 390" role="img" aria-label="國立臺中科技大學六大學院體質約束環圖">
+                <defs>
+                  <radialGradient id="coreGlow" cx="50%" cy="50%" r="50%">
+                    <stop offset="0%" stop-color="#7F0019" stop-opacity="0.09"/>
+                    <stop offset="70%" stop-color="#2E5266" stop-opacity="0.05"/>
+                    <stop offset="100%" stop-color="#FAF8F3" stop-opacity="0"/>
+                  </radialGradient>
+                </defs>
+
+                <!-- Ambient center glow & orbital rings -->
+                <circle cx="280" cy="184" r="165" fill="url(#coreGlow)"/>
+                <circle cx="280" cy="184" r="134" fill="none" stroke="#2E5266" stroke-opacity="0.3" stroke-dasharray="5 5"/>
+                <circle cx="280" cy="184" r="82" fill="none" stroke="#8A5A2B" stroke-opacity="0.28" stroke-width="1"/>
+
+                <!-- Conduits from center to 6 colleges -->
+                <g stroke="#2E5266" stroke-opacity="0.45" stroke-width="1.5">
+                  <line x1="280" y1="122" x2="280" y2="69"/>
+                  <line x1="334" y1="153" x2="396" y2="117"/>
+                  <line x1="334" y1="215" x2="396" y2="251"/>
+                  <line x1="280" y1="246" x2="280" y2="299"/>
+                  <line x1="226" y1="215" x2="164" y2="251"/>
+                  <line x1="226" y1="153" x2="164" y2="117"/>
+                </g>
+
+                <!-- Center NUTC Core -->
+                <circle cx="280" cy="184" r="62" fill="#FFFFFF" stroke="#7F0019" stroke-width="2"/>
+                <text x="280" y="169" text-anchor="middle" fill="#7F0019" font-family="'JetBrains Mono', monospace" font-size="11.5" font-weight="700">NUTC CORE</text>
+                <text x="280" y="191" text-anchor="middle" fill="#2B2927" font-family="'Noto Serif TC', serif" font-size="17" font-weight="900">15,600+ 師生</text>
+                <text x="280" y="212" text-anchor="middle" fill="#57534E" font-family="'Noto Sans TC', sans-serif" font-size="11.5">非電資為主體</text>
+
+                <!-- 6 College Nodes -->
+                <g font-family="'Noto Sans TC', sans-serif" font-size="13" font-weight="700" text-anchor="middle">
+                  <!-- Top: 商學院 -->
+                  <rect x="212" y="30" width="136" height="38" rx="19" fill="#FFFFFF" stroke="#2E5266" stroke-width="1.4"/>
+                  <text x="280" y="54" fill="#2B2927">商學院 · BI/財稅</text>
+
+                  <!-- Top-Right: 設計學院 -->
+                  <rect x="348" y="88" width="154" height="38" rx="19" fill="#FFFFFF" stroke="#2E5266" stroke-width="1.4"/>
+                  <text x="425" y="112" fill="#2B2927">設計學院 · 3D/動態</text>
+
+                  <!-- Bottom-Right: 語文學院 -->
+                  <rect x="348" y="242" width="154" height="38" rx="19" fill="#FFFFFF" stroke="#2E5266" stroke-width="1.4"/>
+                  <text x="425" y="266" fill="#2B2927">語文學院 · 多語代理</text>
+
+                  <!-- Bottom: 資訊與流通學院 -->
+                  <rect x="196" y="300" width="168" height="38" rx="19" fill="#EEF5F1" stroke="#2F6349" stroke-width="1.6"/>
+                  <text x="280" y="324" fill="#2F6349">資訊與流通學院 · iPAS</text>
+
+                  <!-- Bottom-Left: 中護健康學院 -->
+                  <rect x="52" y="242" width="160" height="38" rx="19" fill="#FFFFFF" stroke="#2E5266" stroke-width="1.4"/>
+                  <text x="132" y="266" fill="#2B2927">中護健康學院 · 衛教</text>
+
+                  <!-- Top-Left: 智慧產業學院 -->
+                  <rect x="52" y="88" width="160" height="38" rx="19" fill="#FFFFFF" stroke="#2E5266" stroke-width="1.4"/>
+                  <text x="132" y="112" fill="#2B2927">智慧產業學院 · 跨界</text>
+                </g>
+
+                <!-- Constraint Axis Footer -->
+                <rect x="28" y="352" width="504" height="28" rx="6" fill="#F2EEE5" stroke="#CCC4B4"/>
+                <text x="280" y="370" text-anchor="middle" fill="#2B2927" font-family="'Noto Sans TC', sans-serif" font-size="11.5" font-weight="600">
+                  體質限制：專業學分滿載 × 行政人力吃緊 × 國立採購週期長 → 必須輕量化切入
+                </text>
+              </svg>
+
+              <div class="rule-trio" aria-label="中科大策略三不原則與破局定位">
+                <div class="rule-badge">✕ 不打硬體算力軍備戰</div>
+                <div class="rule-badge">✕ 不強推 18 學分大課綱</div>
+                <div class="rule-badge">✕ 拒絕靜態簡報型 AI</div>
+                <div class="rule-badge is-breakthrough">✓ 破局定位：跨界造物雙引擎（雲端前沿池 × 3 小時外掛 × 系辦微軟體）</div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Right SVG: 2D Strategic Positioning Quadrant -->
+          <article class="plate">
+            <div class="plate-head">
+              <span class="plate-label">FIG 04B // 中部五校 AI 策略定位座標象限圖</span>
+              <span class="plate-tag">AGILITY VS TANGIBLE IMPACT</span>
+            </div>
+            <div class="svg-box">
+              <svg viewBox="0 0 560 400" role="img" aria-label="中部五校 AI 策略定位象限圖：東海、暨大、雲科大、逢甲對比臺中科大破局象限">
+                <defs>
+                  <linearGradient id="nutcZone" x1="0%" y1="100%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="#8A5A2B" stop-opacity="0.06"/>
+                    <stop offset="100%" stop-color="#7F0019" stop-opacity="0.11"/>
+                  </linearGradient>
+                </defs>
+
+                <!-- Chart Frame -->
+                <rect x="74" y="28" width="454" height="316" rx="8" fill="#FAF8F3" stroke="#CCC4B4"/>
+
+                <!-- Target Breakthrough Quadrant (Top-Right) -->
+                <rect x="301" y="28" width="227" height="158" rx="4" fill="url(#nutcZone)" stroke="#7F0019" stroke-opacity="0.4" stroke-dasharray="4 4"/>
+                <text x="516" y="48" text-anchor="end" fill="#7F0019" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700">NUTC 跨界造物破局區</text>
+
+                <!-- Quadrant Crosshairs -->
+                <line x1="301" y1="28" x2="301" y2="344" stroke="#78716C" stroke-opacity="0.4" stroke-dasharray="3 4"/>
+                <line x1="74" y1="186" x2="528" y2="186" stroke="#78716C" stroke-opacity="0.4" stroke-dasharray="3 4"/>
+
+                <!-- Axis Labels -->
+                <text x="301" y="368" text-anchor="middle" fill="#57534E" font-family="'Noto Sans TC', sans-serif" font-size="12" font-weight="600">
+                  ← 重資產／長課綱門檻　　　導入敏捷度與低師生門檻 →
+                </text>
+                <text x="26" y="186" text-anchor="middle" fill="#57534E" font-family="'Noto Sans TC', sans-serif" font-size="12" font-weight="600" transform="rotate(-90 26 186)">
+                  ↓ 單點展示・文書化　　真實作品產出 × 跨院擴散力 ↑
+                </text>
+
+                <!-- Peer Universities -->
+                <!-- 東海大學 -->
+                <g>
+                  <circle cx="138" cy="248" r="8" fill="#FFFFFF" stroke="#7F0019" stroke-width="2.2"/>
+                  <text x="138" y="274" text-anchor="middle" fill="#2B2927" font-family="'Noto Sans TC', sans-serif" font-size="13" font-weight="700">東海大學</text>
+                  <text x="138" y="292" text-anchor="middle" fill="#7F0019" font-family="'Noto Sans TC', sans-serif" font-size="11">重算力基地</text>
+                </g>
+
+                <!-- 雲林科技大學 -->
+                <g>
+                  <circle cx="176" cy="112" r="8" fill="#FFFFFF" stroke="#2E5266" stroke-width="2.2"/>
+                  <text x="176" y="88" text-anchor="middle" fill="#2B2927" font-family="'Noto Sans TC', sans-serif" font-size="13" font-weight="700">雲林科技大學</text>
+                  <text x="176" y="136" text-anchor="middle" fill="#2E5266" font-family="'Noto Sans TC', sans-serif" font-size="11">AI4BI 18 學分</text>
+                </g>
+
+                <!-- 暨南大學 -->
+                <g>
+                  <circle cx="358" cy="284" r="8" fill="#FFFFFF" stroke="#2E5266" stroke-width="2.2"/>
+                  <text x="358" y="308" text-anchor="middle" fill="#2B2927" font-family="'Noto Sans TC', sans-serif" font-size="13" font-weight="700">暨南大學</text>
+                  <text x="358" y="326" text-anchor="middle" fill="#2E5266" font-family="'Noto Sans TC', sans-serif" font-size="11">Astra 平台額度</text>
+                </g>
+
+                <!-- 逢甲大學 -->
+                <g>
+                  <circle cx="384" cy="208" r="8" fill="#FFFFFF" stroke="#2E5266" stroke-width="2.2"/>
+                  <text x="410" y="205" text-anchor="start" fill="#2B2927" font-family="'Noto Sans TC', sans-serif" font-size="13" font-weight="700">逢甲大學</text>
+                  <text x="410" y="222" text-anchor="start" fill="#2E5266" font-family="'Noto Sans TC', sans-serif" font-size="11">行政 AI 競賽</text>
+                </g>
+
+                <!-- 臺中科大 (Target Hero Node) -->
+                <g>
+                  <circle cx="446" cy="86" r="20" fill="#7F0019" fill-opacity="0.12"/>
+                  <circle cx="446" cy="86" r="10" fill="#7F0019" stroke="#FFFFFF" stroke-width="2"/>
+                  <rect x="336" y="108" width="182" height="46" rx="6" fill="#FFFFFF" stroke="#7F0019" stroke-width="1.6"/>
+                  <text x="427" y="128" text-anchor="middle" fill="#7F0019" font-family="'Noto Serif TC', serif" font-size="14" font-weight="900">國立臺中科技大學</text>
+                  <text x="427" y="146" text-anchor="middle" fill="#2F6349" font-family="'Noto Sans TC', sans-serif" font-size="11" font-weight="700">跨界造物雙引擎（輕量×實作）</text>
+                </g>
+              </svg>
+            </div>
+          </article>
+        </div>
+
+        <!-- Inter-University Strategy Matrix Table -->
+        <article class="plate">
+          <div class="matrix-controls">
+            <span class="plate-label">FIG 04C // 中部五校策略對比矩陣（點擊篩選聚焦）</span>
+            <div class="filter-pills" role="group" aria-label="矩陣篩選控制">
+              <button class="tab-btn is-active" type="button" data-matrix-filter="all">全部五校對比</button>
+              <button class="tab-btn" type="button" data-matrix-filter="infra">資源與算力路線</button>
+              <button class="tab-btn" type="button" data-matrix-filter="curriculum">教學與行政路線</button>
+              <button class="tab-btn is-gold" type="button" data-matrix-filter="nutc">僅高亮臺中科大破局</button>
+            </div>
+          </div>
+
+          <div class="matrix-scroll">
+            <table class="matrix-table" id="matrix-table">
+              <thead>
+                <tr>
+                  <th>學校</th>
+                  <th>他校既有模式</th>
+                  <th>核心運作機制</th>
+                  <th>直接複製對中科大的風險</th>
+                  <th>臺中科大「跨界造物雙引擎」破局解法</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr data-cat="infra">
+                  <td class="school-name">東海大學</td>
+                  <td><span class="pill-tag coral">重算力基地</span></td>
+                  <td>自建實體算力中心與重資本硬體設施</td>
+                  <td>國立採購流程曠日廢時・設備驗收即過時</td>
+                  <td><span class="pill-tag cyan">雲端前沿池</span> 透過國內代理商統編授權租賃前沿 API</td>
+                </tr>
+                <tr data-cat="infra">
+                  <td class="school-name">暨南大學</td>
+                  <td><span class="pill-tag cyan">Astra 平台額度</span></td>
+                  <td>統一採購通用 AI 平台額度全面發放</td>
+                  <td>無門檻大放送易淪為寫公文／聊天查詢</td>
+                  <td><span class="pill-tag gold">作品換額度</span> 廢除無門檻發放，以真實作品兌換旗艦算力</td>
+                </tr>
+                <tr data-cat="curriculum">
+                  <td class="school-name">雲林科技大學</td>
+                  <td><span class="pill-tag cyan">AI4BI 18 學分</span></td>
+                  <td>建置完整 18 學分跨領域學程模組</td>
+                  <td>擠壓專業學分・非電資教師開課門檻過高</td>
+                  <td><span class="pill-tag cyan">三層無痛導入</span> 不改 18 學分課綱，從 3h 外掛漸進嵌入</td>
+                </tr>
+                <tr data-cat="curriculum">
+                  <td class="school-name">逢甲大學</td>
+                  <td><span class="pill-tag cyan">行政 AI 競賽</span></td>
+                  <td>舉辦短期行政人員 AI 應用創意競賽</td>
+                  <td>易流於靜態簡報展示，賽後無法日常維運</td>
+                  <td><span class="pill-tag mint">6 週雙人進駐</span> 系辦×iPAS 雙人寫成微軟體・實測省時 70%</td>
+                </tr>
+                <tr class="is-nutc" data-cat="nutc">
+                  <td class="school-name">國立臺中科技大學</td>
+                  <td><span class="pill-tag gold">1 核心 × 雙軸驅動</span></td>
+                  <td>造物者計畫核心 × 行政微軟體 × 三層課程導入</td>
+                  <td>零核心系統更動・零個資外洩・零重硬體沉沒成本</td>
+                  <td><span class="pill-tag mint">全校造物生態</span> 禁靜態 PPT，交出可運作軟體 / 3D / 動態影音</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════════════════
+         SECTION 5: 三階段路線圖與國立科大合規防坑機制
          ══════════════════════════════════════════════════════════════════ -->
     <section class="blueprint-section" id="roadmap">
       <div class="container">
         <div class="section-head">
           <div class="section-title-wrap">
             <span class="section-code">SEC 05</span>
-            <h2 class="section-title">三學制躍遷、路線圖與合規防坑機制</h2>
+            <h2 class="section-title">三階段滾動路線圖與國立科大合規防坑機制</h2>
           </div>
-          <p class="section-thesis">依五專／四技／二技特性精準設計跨門躍遷，並以 3 階段滾動擴張及國立科大核銷防坑確保永續落地。</p>
+          <p class="section-thesis">以 1.5～2 年三階段節奏由點火打樣推升為全校校務制度，並針對國立科大主計核銷、資安紅線與算力激勵設立明確防坑機制。</p>
         </div>
 
-        <!-- 5A: Three Tracks Leap Cards -->
-        <div class="subblock-title">
-          <h3>三學制「3 小時跨門挑戰」Before → After 躍遷圖卡</h3>
-          <span>ENGINE 2 // 3-HOUR PLUG-AND-PLAY MODULES</span>
-        </div>
-
-        <div class="leap-grid">
-          <!-- 五專部 -->
-          <article class="leap-card">
-            <div class="leap-top">
-              <span class="leap-track">五專部</span>
-              <span class="leap-trait">重視覺體驗・喜歡酷作品</span>
-            </div>
-            <div class="leap-flow">
-              <div class="leap-step">
-                <span class="leap-step-lbl">BEFORE // 傳統現況</span>
-                <span class="leap-step-val">單純課堂報告、靜態簡報或平面文書作業</span>
-              </div>
-              <div class="leap-arrow">3 小時空間視覺與互動程式跨門挑戰</div>
-              <div class="leap-step">
-                <span class="leap-step-lbl">AFTER // 造物躍遷</span>
-                <span class="leap-step-val is-after">零基礎完成 AI 3D 建模輔助、動態海報與互動網頁小遊戲</span>
-              </div>
-            </div>
-            <div class="leap-tags">
-              <span class="pill-tag cyan">3D 空間視覺</span>
-              <span class="pill-tag cyan">互動小程式</span>
-              <span class="pill-tag gold">看得見・玩得到的作品集</span>
-            </div>
-          </article>
-
-          <!-- 四技部 -->
-          <article class="leap-card is-gold">
-            <div class="leap-top">
-              <span class="leap-track">四技部</span>
-              <span class="leap-trait">實務專題 × 就業備戰</span>
-            </div>
-            <div class="leap-flow">
-              <div class="leap-step">
-                <span class="leap-step-lbl">BEFORE // 傳統現況</span>
-                <span class="leap-step-val">紙上談兵的專題書面報告，缺乏真實組織驗證場域</span>
-              </div>
-              <div class="leap-arrow">畢業專題產品化 × iPAS 實戰衝刺</div>
-              <div class="leap-step">
-                <span class="leap-step-lbl">AFTER // 造物躍遷</span>
-                <span class="leap-step-val is-after">對接真實系辦／產業痛點，交付可運作系統原型 ＋ iPAS 證照</span>
-              </div>
-            </div>
-            <div class="leap-tags">
-              <span class="pill-tag gold">畢業專題產品化</span>
-              <span class="pill-tag mint">iPAS AI 應用規劃師</span>
-              <span class="pill-tag cyan">國家級能力鑑定</span>
-            </div>
-          </article>
-
-          <!-- 二技部 -->
-          <article class="leap-card is-mint">
-            <div class="leap-top">
-              <span class="leap-track">二技部</span>
-              <span class="leap-trait">修業兩年・極度務實導向</span>
-            </div>
-            <div class="leap-flow">
-              <div class="leap-step">
-                <span class="leap-step-lbl">BEFORE // 傳統現況</span>
-                <span class="leap-step-val">重複性跨系統複製貼上、多語溝通與報表整理耗時</span>
-              </div>
-              <div class="leap-arrow">職場自動化代理（Agent）工作流挑戰</div>
-              <div class="leap-step">
-                <span class="leap-step-lbl">AFTER // 造物躍遷</span>
-                <span class="leap-step-val is-after">為商管、設計、醫護場景建置自動報表、多語客服與彙整 Agent</span>
-              </div>
-            </div>
-            <div class="leap-tags">
-              <span class="pill-tag mint">自動報表 Agent</span>
-              <span class="pill-tag mint">多語商務客服</span>
-              <span class="pill-tag gold">進職場立即可用管線</span>
-            </div>
-          </article>
-        </div>
-
-        <!-- 5B: Three-Phase Roadmap -->
-        <div class="subblock-title">
+        <!-- 5A: Three-Phase Roadmap -->
+        <div class="subblock-title" style="margin-top: 0;">
           <h3>1.5 ～ 2 年三階段滾動式校務發展路線圖</h3>
           <span>PHASE 1 → PHASE 2 → PHASE 3 ROLLING EXPANSION</span>
         </div>
@@ -968,16 +1155,16 @@
           <svg viewBox="0 0 1120 56">
             <defs>
               <linearGradient id="roadGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-                <stop offset="0%" stop-color="#38BDF8"/>
-                <stop offset="50%" stop-color="#FBBF24"/>
-                <stop offset="100%" stop-color="#34D399"/>
+                <stop offset="0%" stop-color="#2E5266"/>
+                <stop offset="50%" stop-color="#8A5A2B"/>
+                <stop offset="100%" stop-color="#2F6349"/>
               </linearGradient>
             </defs>
-            <line x1="180" y1="28" x2="940" y2="28" stroke="#1E293B" stroke-width="6" stroke-linecap="round"/>
-            <line x1="180" y1="28" x2="940" y2="28" stroke="url(#roadGrad)" stroke-width="4" stroke-linecap="round"/>
-            <circle cx="180" cy="28" r="11" fill="#050811" stroke="#38BDF8" stroke-width="3"/>
-            <circle cx="560" cy="28" r="11" fill="#050811" stroke="#FBBF24" stroke-width="3"/>
-            <circle cx="940" cy="28" r="11" fill="#050811" stroke="#34D399" stroke-width="3"/>
+            <line x1="180" y1="28" x2="940" y2="28" stroke="#E3DED3" stroke-width="6" stroke-linecap="round"/>
+            <line x1="180" y1="28" x2="940" y2="28" stroke="url(#roadGrad)" stroke-width="3.5" stroke-linecap="round"/>
+            <circle cx="180" cy="28" r="10" fill="#FFFFFF" stroke="#2E5266" stroke-width="3"/>
+            <circle cx="560" cy="28" r="10" fill="#FFFFFF" stroke="#8A5A2B" stroke-width="3"/>
+            <circle cx="940" cy="28" r="10" fill="#FFFFFF" stroke="#2F6349" stroke-width="3"/>
           </svg>
         </div>
 
@@ -1005,7 +1192,7 @@
             <div class="phase-nodes">
               <div class="phase-node"><span>研發處／教務處／深耕正式提案</span><b>數據立項</b></div>
               <div class="phase-node"><span>微軟體特攻隊擴展規模</span><b>6 院 12 系辦</b></div>
-              <div class="phase-node"><span>3h 跨門外掛嵌入課堂</span><b>大三專題＋通識</b></div>
+              <div class="phase-node"><span>L1–L3 外掛模組導入課堂</span><b>通識＋選修＋專題</b></div>
               <div class="phase-node"><span>《AI 造物實戰情報》月刊化</span><b>全校流通</b></div>
             </div>
           </article>
@@ -1025,7 +1212,7 @@
           </article>
         </div>
 
-        <!-- 5C: 3 Compact Compliance Visual Cards -->
+        <!-- 5B: 3 Compact Compliance Visual Cards -->
         <div class="subblock-title">
           <h3>國立科大執行與核銷防坑圖卡</h3>
           <span>GOVERNANCE · ACCOUNTING · SECURITY · VERIFICATION</span>
@@ -1124,6 +1311,88 @@
         </div>
       </div>
     </section>
+
+    <!-- ══════════════════════════════════════════════════════════════════
+         SECTION 6: 計畫概念短片與 26 格分鏡展示
+         ══════════════════════════════════════════════════════════════════ -->
+    <section class="blueprint-section" id="film">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-title-wrap">
+            <span class="section-code">SEC 06</span>
+            <h2 class="section-title">計畫概念展示短片與七幕動態分鏡</h2>
+          </div>
+          <p class="section-thesis">本片以純程式碼（HTML + GSAP + Canvas + earshot 程式音效）生成，以自身作為「不靠傳統簡報也能製作動態電影」的實戰示範。</p>
+        </div>
+
+        <article class="plate" aria-label="計畫概念影片展示舞台">
+          <div class="plate-head">
+            <span class="plate-label">FIG 06 // EXECUTIVE MOTION BRIEFING</span>
+            <span class="plate-tag">1920×1080 · 30FPS · HTML/GSAP + EARSHOT DSP</span>
+          </div>
+
+          <div class="film-plate-body">
+            <div class="video-stage">
+              <video id="blueprint-film" controls preload="metadata" playsinline poster="./assets/sheet_zh.png" src="./assets/nutc_open_door_zh.mp4"></video>
+            </div>
+
+            <div class="film-rail">
+              <div class="film-specs">
+                <span class="spec-chip">純程式碼動態電影</span>
+                <span class="spec-chip">台灣華語旁白 + 程式音效</span>
+                <span class="spec-chip">7 幕結構 · 26 格關鍵分鏡</span>
+              </div>
+
+              <div class="film-actions">
+                <a class="btn-blueprint" href="./assets/sheet_zh.png" target="_blank" rel="noopener">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                    <rect x="3" y="3" width="18" height="18" rx="2"/>
+                    <path d="M3 9h18M9 21V9"/>
+                  </svg>
+                  檢視完整 26 格分鏡總覽圖 (sheet_zh.png)
+                </a>
+              </div>
+            </div>
+
+            <div class="scene-index" role="tablist" aria-label="影片七幕分鏡架構速覽">
+              <button class="scene-chip is-active" type="button" role="tab" aria-selected="true" data-scene="s01">
+                <span class="scene-chip-id">S01</span>
+                <span class="scene-chip-name">打破簡報思維</span>
+              </button>
+              <button class="scene-chip" type="button" role="tab" aria-selected="false" data-scene="s02">
+                <span class="scene-chip-id">S02</span>
+                <span class="scene-chip-name">三座造物工坊</span>
+              </button>
+              <button class="scene-chip" type="button" role="tab" aria-selected="false" data-scene="s03">
+                <span class="scene-chip-id">S03</span>
+                <span class="scene-chip-name">中科大體質盤點</span>
+              </button>
+              <button class="scene-chip" type="button" role="tab" aria-selected="false" data-scene="s04">
+                <span class="scene-chip-id">S04</span>
+                <span class="scene-chip-name">造物者社群鐵律</span>
+              </button>
+              <button class="scene-chip" type="button" role="tab" aria-selected="false" data-scene="s05">
+                <span class="scene-chip-id">S05</span>
+                <span class="scene-chip-name">系辦微軟體特攻</span>
+              </button>
+              <button class="scene-chip" type="button" role="tab" aria-selected="false" data-scene="s06">
+                <span class="scene-chip-id">S06</span>
+                <span class="scene-chip-name">三學制跨門挑戰</span>
+              </button>
+              <button class="scene-chip" type="button" role="tab" aria-selected="false" data-scene="s07">
+                <span class="scene-chip-id">S07</span>
+                <span class="scene-chip-name">路線圖與終局門扉</span>
+              </button>
+            </div>
+
+            <div class="scene-brief-bar" id="scene-brief-bar" aria-live="polite">
+              <span><strong>S01 //</strong> 灰暗 PPT 投影片 3D 碎裂解體 → 立體門扉開啟：破除「只用 AI 做簡報」的假轉型。</span>
+              <span class="mono">SCENE 01 / 07</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">
@@ -1135,7 +1404,7 @@
 
       <div class="footer-links">
         <a class="btn-blueprint" href="./assets/sheet_zh.png" target="_blank" rel="noopener">開啟 26 格分鏡圖 (sheet_zh.png)</a>
-        <a class="tab-btn" href="#hero">回到頂部藍圖</a>
+        <a class="tab-btn" href="#architecture">回到計畫總體架構</a>
       </div>
     </div>
   </footer>
