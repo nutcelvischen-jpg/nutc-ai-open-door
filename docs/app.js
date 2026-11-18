@@ -229,7 +229,7 @@
     });
   });
 
-  /* ── 4. Section 4: Inter-University Strategy Matrix Filter ── */
+  /* ── 4. Section 5: Inter-University Strategy Matrix Filter ── */
   const matrixButtons = Array.from(document.querySelectorAll("[data-matrix-filter]"));
   const matrixRows = Array.from(document.querySelectorAll("#matrix-table tbody tr"));
 
@@ -241,13 +241,13 @@
       });
 
       matrixRows.forEach(function (row) {
-        const cat = row.getAttribute("data-cat");
+        const cats = (row.getAttribute("data-cat") || "").split(/\s+/);
         if (filter === "all") {
           row.classList.remove("is-dimmed");
         } else if (filter === "nutc") {
-          row.classList.toggle("is-dimmed", cat !== "nutc");
+          row.classList.toggle("is-dimmed", cats.indexOf("nutc") === -1);
         } else {
-          row.classList.toggle("is-dimmed", cat !== filter && cat !== "nutc");
+          row.classList.toggle("is-dimmed", cats.indexOf(filter) === -1 && cats.indexOf("nutc") === -1);
         }
       });
     });
