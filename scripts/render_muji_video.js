@@ -114,6 +114,7 @@ async function captureContactSheet(worker, tl) {
   const keyPaths = [];
   const inspectMap = new Map([
     ["s01_3", "muji_s01_portal.png"],
+    ["s02_3", "muji_s02_fde.png"],
     ["s04_3", "muji_s04_studio.png"],
     ["s05_4", "muji_s05_sandbox.png"],
     ["s06_3", "muji_s06_four_doors.png"],
