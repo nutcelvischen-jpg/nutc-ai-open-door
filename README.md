@@ -4,10 +4,10 @@
 
 > ### 👉 正式部署網址（點一下直接開網頁）：[https://nutcelvischen-jpg.github.io/nutc-ai-open-door/](https://nutcelvischen-jpg.github.io/nutc-ai-open-door/)
 > - **備用即時預覽**：[https://raw.githack.com/nutcelvischen-jpg/nutc-ai-open-door/main/docs/index.html](https://raw.githack.com/nutcelvischen-jpg/nutc-ai-open-door/main/docs/index.html)
-> - **本機推播倉庫**：[`nutcelvischen-jpg/nutc-ai-open-door`](https://github.com/nutcelvischen-jpg/nutc-ai-open-door)（上游原版：[`DrChunChihChen/nutc-ai-open-door`](https://github.com/DrChunChihChen/nutc-ai-open-door)）
+> - **計畫倉庫**：[`nutcelvischen-jpg/nutc-ai-open-door`](https://github.com/nutcelvischen-jpg/nutc-ai-open-door)
 > - **完整計畫書**：[./PLAN.md](./PLAN.md) ｜ **分鏡設計規範**：[./Motion.md](./Motion.md) ｜ **26 格影片分鏡總覽**：[./docs/assets/sheet_zh.png](./docs/assets/sheet_zh.png)
 
-淘汰「**做投影片、寫厚報告、單純上網找資料**」的舊時代作業！全面導入 **Forward Deployed Engineering（FDE，前線部署工程）**——**「程式碼交給 AI，業務流程與人交給商學院與領域專業」**；從校內「系辦」日常行政流程啟動 **小量 POC → MVP**，以極致實作課驅動 **15,600+ 師生** 直接產出數字決策 Dashboard、3D 地震視覺與 **不出本機的地端語言模型（Local LLM）**。
+淘汰「**做投影片、寫厚報告、單純上網找資料**」的舊時代作業！全面導入 **Forward Deployed Engineering（FDE，前線部署工程）**——**「程式碼交給 AI，業務流程與人交給商學院與領域專業」**；從校內「系辦」日常行政流程啟動 **小量 POC → MVP**，以極致實作課驅動 **15,600+ 師生** 直接產出數字決策 Dashboard、3D 立體空間視覺與 **不出本機的地端語言模型（Local LLM）**。
 
 ---
 
@@ -15,7 +15,7 @@
 
 ```mermaid
 flowchart TB
-    HUB["<b>1 HUB｜AI 跨界造物者社群 × FDE 前線部署基地</b><br/>跨 6 學院 8–12 位實戰教師（程式交給 AI・流程與人交給商學院）<br/>✕ 淘汰投影片/報告/找資料 ・ ✓ 極致實作 Dashboard / 3D 地震 / 地端 LLM"]
+    HUB["<b>1 HUB｜AI 跨界造物者社群 × FDE 前線部署基地</b><br/>跨 6 學院 8–12 位實戰教師（程式交給 AI・流程與人交給商學院）<br/>✕ 淘汰投影片/報告/找資料 ・ ✓ 極致實作 Dashboard / 3D 空間 / 地端 LLM"]
 
     HUB -->|"FDE 駐點＋地端 AI"| A1
     HUB -->|"實戰教案・沙盒算力・TA 協作"| A2
@@ -27,27 +27,27 @@ flowchart TB
 
     subgraph A2["AXIS 2｜極致實作培育軸：開門講堂 × 日間三階 × 進修部夜間企業包班"]
         direction LR
-        L1["L1 開門 AI 講堂<br/>每月 1 場 (3h)・師生×企業混班"] --> L2["L2–L3 日間實作課<br/>選修 6–9h ＋ 6 週 FDE/競賽專題"] --> L4["L4 進修部轉型<br/>夜間企業 AI 員工實戰包班"]
+        L1["L1 開門 AI 講堂<br/>每月 1 場 (3h)・師生×企業混班"] --> L2["L2–L3 日間實作課<br/>選修 6–9h ＋ 6 週 FDE 實作專題"] --> L4["L4 進修部轉型<br/>夜間企業 AI 員工實戰包班"]
     end
 
     A1 <-->|"FDE / iPAS ⇄ 場域"| A2
     A1 -->|"系辦實測工時 -70% 數據"| LOOP
     A2 -->|"Dashboard / 3D / 地端LLM＋包班營收"| LOOP
 
-    LOOP["<b>3 OUTCOMES & CLOSED LOOP｜FDE 戰力 × 雙軌激勵 × 進修部造血</b><br/>交付真實系統＋對標全國冠軍作品 → 講堂引流進修部夜間企業包班，營收反哺全校算力"]
+    LOOP["<b>3 OUTCOMES & CLOSED LOOP｜FDE 戰力 × 雙軌激勵 × 進修部造血</b><br/>交付可運行實務系統（Dashboard／3D／地端 LLM） → 講堂引流進修部夜間企業包班，營收反哺全校算力"]
     LOOP -.->|"包班營收・企業題庫與算力回饋"| HUB
 ```
 
-### FDE 前線部署工程 × 本校得獎與實戰 Repo 標竿（對齊培育方向）
+### FDE 前線部署工程 × 四大核心實務產出方向（徹底淘汰簡報與報告）
 
-> **為什麼商學院最適合做 FDE？** 當程式碼生成可大量交給 AI，真正的勝負關鍵在「梳理企業 ERP 毛利、財稅法規、國貿單據與組織中的人」——這正是商學院最擅長的主場；由「系辦」日常流程做小量 **POC / MVP** 起步，直接對標總主持人陳俊智博士個人網站與開源實戰成果：
+> **為什麼商學院最適合做 FDE？** 當程式碼生成可大量交給 AI，真正的勝負關鍵在「梳理企業 ERP 毛利、財稅法規、國貿單據與組織中的人」——這正是商學院與領域院系最擅長的主場；從全校最近的「系辦」日常流程做小量 **POC / MVP** 起步，全面以極致實作課產出可實際運行的系統：
 
-| 實務產出面向 | 代表性得獎作品／開源實戰 Repo | 亮點與培育對標價值 | 線上實機驗證連結 |
-| :--- | :--- | :--- | :--- |
-| **🏆 個人網站全國冠軍標竿** | **《址南針 SiteCompass》**（2026 InnoServe 全國第一）<br/>**多 AI Agent 零售預測**（2025 全國電子設計賽冠軍）<br/>**阿里巴巴 B2B 跨境電商賽**（第十屆全國第一） | 證明商學院學生搭配 AI 寫碼，能串聯 **270 萬筆商工紀錄** 做出店面風險評估系統並奪下全國冠軍 | [個人網站與 ICMA Lab](https://drchunchihchen.github.io/cv/) ｜ [全國獲獎實證](https://drchunchihchen.github.io/cv/awards.html) |
-| **📊 數字決策 Dashboard** | **商學院 7 系系辦戰情室 MVP**（國貿/企管/會資等）<br/>**南投客運 6670 載客率儀表板**<br/>**鴻鼎菓子 GEO 品牌聲量 PoC** / **Data Atoms** | 直接把日常表格與系辦數據變成互動決策戰情室，取代靜態簡報與口頭報告 | [國貿系辦戰情室 MVP](https://drchunchihchen.github.io/nutc-ib-cockpit/) ｜ [客運 6670 儀表板](https://nutcelvischen-jpg.github.io/nantou-6670-occ/) ｜ [品牌聲量 PoC](https://drchunchihchen.github.io/idodo-geo-dashboard/) |
-| **🌏 3D 地震與空間視覺** | **《臺灣地震 3D 語音導覽》**<br/>**《臺灣 3D 立體震源小幫手》**<br/>**《全臺商工登記 × 台股行情 3D 飛越》** | 載入氣象署 1990–2026 年 **73,683 筆地震資料**，AI 即時控鏡飛越斷層震源並同步語音解說 | [臺灣地震 3D 語音導覽](https://nutcelvischen-jpg.github.io/earthquake_ec/) ｜ [3D 震源小幫手](https://nutcelvischen-jpg.github.io/taiwan-earthquake-3d/) ｜ [商工 × 台股 3D](https://nutcelvischen-jpg.github.io/taiwan-gcis-stock-3d-ai/) |
-| **🔒 地端 LLM（不出本機）** | **《地端 LLM × ERP 中小企業 AI 助理 PoC》**<br/>**《StayPass 宅護照》地端 VLM 辨識（正確率 98%）**<br/>**《國貿實戰學院》展場／零售模擬器** | 筆電離線執行語言模型，**ERP 財報毛利、合約與個資 100% 不出本機、不進雲端**，附檔名與頁碼出處 | [地端 LLM × ERP 展示](https://nutcelvischen-jpg.github.io/llm_erp/demo.html) ｜ [國貿實戰學院](https://nutcelvischen-jpg.github.io/trade-retail-lab/) |
+| 實務產出方向 | 課程與場域實作內容 | 取代舊式作業之核心價值 |
+| :--- | :--- | :--- |
+| **📊 數字決策 Dashboard 與戰情室** | 系辦招生生源、修課統計與排課戰情室 MVP、企業營運與品牌動態儀表板 | 直接把日常表格與系辦數據變成可互動決策戰情室，取代靜態簡報與口頭報告 |
+| **🌏 3D 立體空間數據視覺化** | 地理空間、地震時空開放數據、商圈區位與設計建模之三維 WebGL 互動網頁與語音導覽 | 讓非電資師生在程式交給 AI 後跨越門檻，將平面統計升級為立體空間敘事 |
+| **🔒 地端語言模型（資料不出本機）** | 單機或單位電腦離線運行之 Local LLM 財報、合約條文檢核與證件欄位擷取助理 | 針對內部敏感表格、預算核銷與個資單據，確保 **資料 100% 不出本機、不進雲端** |
+| **⚡ 系辦日常流程小量 POC → MVP** | 挑每週重複 ≥2 小時之法規問答、空白合約檢核、評鑑資料彙整與圖文排程等雜務 | 1–2 週快速驗證小量 **POC**，6 週收斂為 **MVP** 上線並達成減負 -70% 實績 |
 
 ---
 
@@ -112,7 +112,7 @@ flowchart LR
 | **暨南大學** | Astra 平台額度 | 統一平台帳號全面配發 | 廢除無門檻大放送，改「以真實 Dashboard／MVP 作品換旗艦算力」 |
 | **雲林科技大學** | AI4BI 18 學分 | 完整 18 學分跨院微學程 | 不擠壓滿載學分，改「開門講堂（3h）引流＋選修 6–9h＋FDE 專題」 |
 | **逢甲大學** | 行政 AI 競賽 | 短期創意競賽導向 | **「系辦日常流程小量 POC → 6 週 MVP」**上線維運・實測省時 70% |
-| **國立臺中科技大學** | **FDE 核心 × 日夜雙軌** | **程式交給 AI、流程與人交給商學院 × 系辦 POC/地端 LLM × 夜間企業包班** | **徹底淘汰投影片與厚報告；日間實作奪冠、夜間企業包班營收反哺算力** |
+| **國立臺中科技大學** | **FDE 核心 × 日夜雙軌** | **程式交給 AI、流程與人交給商學院 × 系辦 POC/地端 LLM × 夜間企業包班** | **徹底淘汰投影片與厚報告；日間交付實務系統、夜間企業包班營收反哺算力** |
 
 ---
 
