@@ -244,10 +244,10 @@ button {
 .nav-link {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
-  padding: 6px 11px;
+  gap: 5px;
+  padding: 6px 9px;
   border-radius: var(--radius-sm);
-  font-size: 13.5px;
+  font-size: 13px;
   font-weight: 500;
   color: var(--ink-secondary);
   background-color: transparent;
@@ -1625,12 +1625,292 @@ main {
   gap: 10px;
 }
 
+/* ── Section 2: Forward Deployed Engineering (FDE) & Award/Repo Benchmarks ── */
+.fde-paradigm-grid {
+  display: grid;
+  grid-template-columns: 1.08fr 0.92fr;
+  gap: 18px;
+  padding: 18px;
+}
+
+.fde-left-col {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.fde-formula-box {
+  padding: 16px 18px;
+  border-radius: var(--radius-md);
+  background-color: var(--muji-red-surface);
+  border: 1.5px solid var(--muji-red-line);
+  display: grid;
+  gap: 6px;
+}
+
+.fde-formula-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: var(--muji-red);
+}
+
+.fde-formula-eq {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-serif);
+  font-size: 1.12rem;
+  font-weight: 900;
+  color: var(--ink-primary);
+}
+
+.fde-formula-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 10px;
+  border-radius: var(--radius-sm);
+  background-color: var(--bg-plate);
+  border: 1px solid var(--indigo-line);
+  color: var(--indigo);
+  font-size: 0.98rem;
+}
+
+.fde-formula-chip.is-biz {
+  border-color: var(--ochre-line);
+  color: var(--ochre-ink);
+}
+
+.fde-formula-chip.is-fde {
+  background-color: var(--muji-red);
+  border-color: var(--muji-red);
+  color: #FFFFFF;
+}
+
+.fde-pillars {
+  display: grid;
+  gap: 10px;
+}
+
+.fde-pillar {
+  padding: 13px 15px;
+  border-radius: var(--radius-sm);
+  background-color: var(--bg-plate);
+  border: 1px solid var(--border-strong);
+  display: grid;
+  gap: 4px;
+}
+
+.fde-pillar-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--ink-primary);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.fde-pillar-tag {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--indigo);
+}
+
+.fde-pillar p {
+  margin: 0;
+  font-size: 13.5px;
+  line-height: 1.62;
+  color: var(--ink-secondary);
+}
+
+.fde-shift-card {
+  padding: 16px 18px;
+  border-radius: var(--radius-md);
+  background-color: var(--bg-base);
+  border: 1px solid var(--border-strong);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.fde-shift-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.fde-shift-head h3 {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-size: 1.02rem;
+  font-weight: 900;
+  color: var(--ink-primary);
+}
+
+.fde-shift-list {
+  display: grid;
+  gap: 10px;
+}
+
+.fde-shift-row {
+  display: grid;
+  gap: 6px;
+  padding: 10px 12px;
+  border-radius: var(--radius-sm);
+  background-color: var(--bg-plate);
+  border: 1px solid var(--border-subtle);
+}
+
+.fde-bench-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.fde-bench-card {
+  padding: 20px;
+  border-radius: var(--radius-md);
+  background-color: var(--bg-plate);
+  border: 1px solid var(--border-strong);
+  box-shadow: var(--shadow-plate);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.fde-bench-card.is-red {
+  border-color: var(--muji-red-line);
+  background-color: #FFFCFC;
+}
+
+.fde-bench-card.is-indigo {
+  border-color: var(--indigo-line);
+}
+
+.fde-bench-card.is-ochre {
+  border-color: var(--ochre-line);
+}
+
+.fde-bench-card.is-moss {
+  border-color: var(--moss-line);
+}
+
+.fde-bench-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.fde-bench-code {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--indigo);
+}
+
+.fde-bench-card.is-red .fde-bench-code { color: var(--muji-red); }
+.fde-bench-card.is-ochre .fde-bench-code { color: var(--ochre-ink); }
+.fde-bench-card.is-moss .fde-bench-code { color: var(--moss); }
+
+.fde-bench-title {
+  margin: 4px 0 0;
+  font-family: var(--font-serif);
+  font-size: 1.12rem;
+  font-weight: 900;
+  color: var(--ink-primary);
+}
+
+.fde-work-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 8px;
+}
+
+.fde-work-list li {
+  font-size: 13.5px;
+  line-height: 1.62;
+  color: var(--ink-secondary);
+  padding: 9px 12px;
+  border-radius: var(--radius-sm);
+  background-color: var(--bg-base);
+  border: 1px solid var(--border-subtle);
+}
+
+.fde-work-list strong {
+  color: var(--ink-primary);
+}
+
+.fde-link-row {
+  margin-top: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding-top: 4px;
+}
+
+.fde-demo-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 11px;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--indigo-line);
+  background-color: var(--indigo-surface);
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  font-weight: 700;
+  color: var(--indigo);
+  transition: background-color 0.2s var(--ease-expo), border-color 0.2s var(--ease-expo), color 0.2s var(--ease-expo);
+}
+
+.fde-demo-link:hover {
+  background-color: var(--indigo);
+  border-color: var(--indigo);
+  color: #FFFFFF;
+}
+
+.fde-bench-card.is-red .fde-demo-link {
+  border-color: var(--muji-red-line);
+  background-color: var(--muji-red-surface);
+  color: var(--muji-red);
+}
+
+.fde-bench-card.is-red .fde-demo-link:hover {
+  background-color: var(--muji-red);
+  border-color: var(--muji-red);
+  color: #FFFFFF;
+}
+
+.fde-bench-card.is-moss .fde-demo-link {
+  border-color: var(--moss-line);
+  background-color: var(--moss-surface);
+  color: var(--moss);
+}
+
+.fde-bench-card.is-moss .fde-demo-link:hover {
+  background-color: var(--moss);
+  border-color: var(--moss);
+  color: #FFFFFF;
+}
+
 /* ── Responsive Rules ── */
 @media (max-width: 1080px) {
   .kpi-strip {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
   .diag-grid,
+  .fde-paradigm-grid,
   .sandbox-sim {
     grid-template-columns: 1fr;
   }
@@ -1638,6 +1918,7 @@ main {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
   .curr-stage-grid,
+  .fde-bench-grid,
   .leap-grid,
   .phase-grid,
   .compliance-grid {

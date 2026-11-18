@@ -178,6 +178,17 @@
       input: "輸入：去識別化統計指標・公開成果",
       redline: "紅線：物理隔離校務核心資料庫",
       tech: "技術：結構化彙整 Agent + 清單輸出"
+    },
+    local: {
+      deliverable: "系辦機敏表單與內規「地端 LLM」離線助理（資料 100% 不出本機）",
+      pct: "-72%",
+      beforeHrs: "9.0 hr/週",
+      beforePct: 76,
+      afterHrs: "2.5 hr/週",
+      afterPct: 21,
+      input: "輸入：系辦本機規章・歷史表單（離線）",
+      redline: "資安：Local LLM 本機運算・0 封包外傳",
+      tech: "技術：地端語言模型 + 附檔名頁碼檢索"
     }
   };
 
