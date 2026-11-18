@@ -15,13 +15,14 @@ from scipy.signal import butter, sosfilt
 
 ROOT = Path(__file__).resolve().parent.parent
 BIN_DIR = ROOT / ".bin"
-os.environ["PATH"] = str(BIN_DIR) + os.pathsep + os.environ.get("PATH", "")
+if BIN_DIR.exists():
+    os.environ["PATH"] = str(BIN_DIR) + os.pathsep + os.environ.get("PATH", "")
 
 from earshot.forge import kit, sfx  # noqa: E402
 
 SR = 48000
 FOLDER = ROOT / "videos" / "nutc_open_door"
-FFMPEG = BIN_DIR / "ffmpeg.exe"
+FFMPEG = shutil.which("ffmpeg") or "/opt/homebrew/bin/ffmpeg"
 
 
 def make_ambient_pad(n_samples: int, sr: int = SR) -> np.ndarray:
@@ -152,9 +153,10 @@ def main() -> None:
         ("pop", L(4, 2) + 0.25, -17.5),
         ("click.confirm", L(4, 3) + 1.25, -14.5),
         ("whoosh.short", S(5) - 0.12, -17.0),
-        ("land", LM(5, 0, 0.48), -16.5),
-        ("land", L(5, 1) - 0.05, -16.5),
-        ("land", LM(5, 1, 0.65), -16.5),
+        ("land", LM(5, 0, 0.45), -16.5),
+        ("land", L(5, 1), -16.5),
+        ("land", LM(5, 1, 0.55), -16.5),
+        ("land", L(5, 2), -15.5),
         ("whoosh.short", S(6) - 0.12, -17.0),
         ("pop", L(6, 0) + 0.10, -17.5),
         ("pop", LM(6, 0, 0.58), -17.5),

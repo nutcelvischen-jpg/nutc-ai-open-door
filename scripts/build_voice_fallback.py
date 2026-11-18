@@ -2,8 +2,8 @@
 """Generate warm Taiwanese Mandarin narration via per-line edge-tts + scipy DSP."""
 import asyncio
 import json
+import shutil
 import subprocess
-import sys
 import tempfile
 import wave
 from pathlib import Path
@@ -12,13 +12,24 @@ import edge_tts
 import numpy as np
 from scipy.signal import butter, sosfiltfilt
 
-SKILL_SCRIPTS = Path(r"C:\Users\Elvischen\.gemini\config\skills\motion-video\scripts")
-sys.path.insert(0, str(SKILL_SCRIPTS))
-from mvlib import load_script, say, show  # noqa: E402
-
 ROOT = Path(__file__).resolve().parent.parent
-FFMPEG = ROOT / ".bin" / "ffmpeg.exe"
+FFMPEG = shutil.which("ffmpeg") or "/opt/homebrew/bin/ffmpeg"
 FOLDER = ROOT / "videos" / "nutc_open_door"
+
+
+def load_script(folder: Path) -> dict:
+    """Load script.json from video project folder."""
+    return json.loads((folder / "script.json").read_text(encoding="utf-8"))
+
+
+def say(line) -> str:
+    """Return spoken TTS string from line string or [spoken, caption] tuple."""
+    return line[0] if isinstance(line, list) else line
+
+
+def show(line) -> str:
+    """Return on-screen caption string from line string or [spoken, caption] tuple."""
+    return line[1] if isinstance(line, list) else line
 
 RATE = 24000
 VOICE = "zh-TW-HsiaoYuNeural"
@@ -222,7 +233,15 @@ async def run_all() -> None:
     tl_path = FOLDER / "timeline_zh.json"
     tl_path.write_text(json.dumps(tl, ensure_ascii=False, indent=1), encoding="utf-8")
 
-    print(f"\n✓ Built {nar_path.name} & {tl_path.name} — total duration: {tl['total']:.3f}s")
+    meta = {"common": data["meta"]["common"], "zh": data["meta"]["zh"], "langs": data["langs"]}
+    tl_js = (
+        "window.TIMELINES=" + json.dumps({"zh": tl}, ensure_ascii=False) + ";\n"
+        "window.META=" + json.dumps(meta, ensure_ascii=False) + ";\n"
+    )
+    tl_js_path = FOLDER / "_tl.js"
+    tl_js_path.write_text(tl_js, encoding="utf-8")
+
+    print(f"\n✓ Built {nar_path.name}, {tl_path.name} & {tl_js_path.name} — total duration: {tl['total']:.3f}s")
     for sc in tl["scenes"]:
         print(f"  {sc['id']}: start={sc['start']:.3f}s dur={sc['dur']:.3f}s ({len(sc['lines'])} lines)")
 

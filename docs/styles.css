@@ -1467,7 +1467,7 @@ main {
   position: relative;
   border-radius: var(--radius-sm);
   overflow: hidden;
-  background-color: #1C1B19;
+  background-color: var(--bg-base);
   border: 1px solid var(--border-strong);
   aspect-ratio: 16 / 9;
 }
@@ -1477,7 +1477,7 @@ main {
   width: 100%;
   height: 100%;
   object-fit: contain;
-  background-color: #1C1B19;
+  background-color: var(--bg-base);
 }
 
 .film-rail {
