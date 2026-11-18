@@ -796,7 +796,7 @@ main {
 
 .leap-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 16px;
 }
 
@@ -817,6 +817,11 @@ main {
 
 .leap-card.is-mint {
   border-color: var(--moss-line);
+}
+
+.leap-card.is-red {
+  border-color: var(--muji-red-line);
+  background-color: #FFFCFC;
 }
 
 .leap-top {
@@ -842,6 +847,7 @@ main {
 
 .leap-card.is-gold .leap-trait { color: var(--ochre-ink); }
 .leap-card.is-mint .leap-trait { color: var(--moss); }
+.leap-card.is-red .leap-trait { color: var(--muji-red); }
 
 .leap-flow {
   display: grid;
