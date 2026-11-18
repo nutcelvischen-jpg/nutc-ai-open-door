@@ -1,8 +1,11 @@
 # 國立臺中科技大學「打開另一扇門：AI 跨界造物」校務發展計畫
 
-> **線上藍圖網頁（MUJI 米白版 · 即時預覽）**：[https://raw.githack.com/nutcelvischen-jpg/nutc-ai-open-door/main/docs/index.html](https://raw.githack.com/nutcelvischen-jpg/nutc-ai-open-door/main/docs/index.html)
-> **本機推播倉庫**：[`nutcelvischen-jpg/nutc-ai-open-door`](https://github.com/nutcelvischen-jpg/nutc-ai-open-door)（上游原版：[`DrChunChihChen/nutc-ai-open-door`](https://github.com/DrChunChihChen/nutc-ai-open-door)）
-> **完整計畫書**：[./PLAN.md](./PLAN.md) ｜ **分鏡設計規範**：[./Motion.md](./Motion.md) ｜ **26 格影片分鏡總覽**：[./docs/assets/sheet_zh.png](./docs/assets/sheet_zh.png)
+[![點此直接打開計畫網頁](https://img.shields.io/badge/🌐_點此直接打開計畫網頁_(GitHub_Pages)-nutcelvischen--jpg.github.io-7F0019?style=for-the-badge)](https://nutcelvischen-jpg.github.io/nutc-ai-open-door/)
+
+> ### 👉 正式部署網址（點一下直接開網頁）：[https://nutcelvischen-jpg.github.io/nutc-ai-open-door/](https://nutcelvischen-jpg.github.io/nutc-ai-open-door/)
+> - **備用即時預覽**：[https://raw.githack.com/nutcelvischen-jpg/nutc-ai-open-door/main/docs/index.html](https://raw.githack.com/nutcelvischen-jpg/nutc-ai-open-door/main/docs/index.html)
+> - **本機推播倉庫**：[`nutcelvischen-jpg/nutc-ai-open-door`](https://github.com/nutcelvischen-jpg/nutc-ai-open-door)（上游原版：[`DrChunChihChen/nutc-ai-open-door`](https://github.com/DrChunChihChen/nutc-ai-open-door)）
+> - **完整計畫書**：[./PLAN.md](./PLAN.md) ｜ **分鏡設計規範**：[./Motion.md](./Motion.md) ｜ **26 格影片分鏡總覽**：[./docs/assets/sheet_zh.png](./docs/assets/sheet_zh.png)
 
 拒絕將 AI 矮化為「做簡報、寫公文」的文書加速器；以「**AI 跨界造物者計畫／社群**」為核心樞紐，驅動 **15,600+ 師生、6 大學院、五專／四技／二技與進修部** 同步推進「行政實戰」與「日間培育 × 夜間企業包班」雙軸生態。
 
