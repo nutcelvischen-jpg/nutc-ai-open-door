@@ -36,20 +36,21 @@
       </button>
 
       <nav class="site-nav" id="site-nav" aria-label="計畫架構導覽">
-        <a class="nav-link is-active" href="#architecture"><span class="nav-idx">01</span>總體架構</a>
+        <a class="nav-link is-active" href="#vision-film"><span class="nav-idx">00</span>願景主片</a>
+        <a class="nav-link" href="#architecture"><span class="nav-idx">01</span>總體架構</a>
         <a class="nav-link" href="#fde"><span class="nav-idx">02</span>FDE 與實務產出</a>
         <a class="nav-link" href="#curriculum"><span class="nav-idx">03</span>課程培育導入</a>
         <a class="nav-link" href="#pipeline"><span class="nav-idx">04</span>系辦 POC 實戰</a>
         <a class="nav-link" href="#matrix"><span class="nav-idx">05</span>體質與校際定位</a>
         <a class="nav-link" href="#roadmap"><span class="nav-idx">06</span>路線圖與合規</a>
-        <a class="nav-link" href="#film"><span class="nav-idx">07</span>概念短片</a>
+        <a class="nav-link" href="#film"><span class="nav-idx">07</span>分鏡短片</a>
       </nav>
     </div>
   </header>
 
   <main id="main">
     <!-- ══════════════════════════════════════════════════════════════════
-         COMPACT TOP BRIEF BANNER (Keeps SEC 01 Architecture Above the Fold)
+         COMPACT TOP BRIEF BANNER (Hero Declaration & Key KPIs)
          ══════════════════════════════════════════════════════════════════ -->
     <section class="top-brief-banner" aria-label="計畫核心宣示與關鍵規模">
       <div class="container">
@@ -65,17 +66,17 @@
           </div>
 
           <div class="top-brief-actions">
-            <a class="btn-muji-primary" href="#fde">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                <path d="M4 6h16M4 12h10M4 18h14"/>
-              </svg>
-              檢視 FDE 與實務產出
-            </a>
-            <a class="btn-blueprint" href="#film">
+            <a class="btn-muji-primary" href="#vision-film" id="hero-play-vision">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                 <polygon points="6 4 20 12 6 20 6 4"/>
               </svg>
-              觀看無印風概念短片
+              播放《造物者》2 分鐘願景主片
+            </a>
+            <a class="btn-blueprint" href="#architecture">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M4 6h16M4 12h10M4 18h14"/>
+              </svg>
+              檢視總體架構與 FDE 產出
             </a>
           </div>
         </div>
@@ -125,6 +126,72 @@
             </svg>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════════════════
+         OPENING VISION FILM: 《造物者 THE MAKERS》2 分鐘願景主片 (YouTube)
+         ══════════════════════════════════════════════════════════════════ -->
+    <section class="blueprint-section vision-prologue-section" id="vision-film" aria-label="開場願景主片">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-title-wrap">
+            <span class="section-code">OPENING</span>
+            <h2 class="section-title">開場願景主片：《造物者 THE MAKERS》— 打開另一扇門</h2>
+          </div>
+          <p class="section-thesis">兩分鐘看懂計畫為什麼出發：從臺中商專到臺中科大，打破學用落差、讓「程式交給 AI，時間留給思考」；從 3D 產業現場與空間導覽起步，串聯比賽、作品與證照，並實現「學生為企業造物、企業把員工送回學校」的雙向造血閉環。</p>
+        </div>
+
+        <article class="plate vision-plate" aria-label="造物者願景主片播放器">
+          <div class="plate-head">
+            <span class="plate-label">FIG 00 // THE MAKERS · 造物者願景主片 (02:02)</span>
+            <span class="plate-tag">1080P · YOUTUBE · 2 分鐘開場宣言</span>
+          </div>
+
+          <div class="vision-split">
+            <div class="vision-stage" id="vision-stage">
+              <button type="button" class="vision-poster-btn" id="vision-play-btn" aria-label="播放《造物者 THE MAKERS》2 分鐘願景主片">
+                <img src="./assets/makers_v2_poster.jpg" alt="造物者 THE MAKERS — 國立臺中科技大學 AI 跨界造物願景主片封面" loading="eager">
+                <div class="vision-play-bar">
+                  <span class="vision-play-pill">
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="6 4 20 12 6 20 6 4"/></svg>
+                    <span>點擊播放《造物者》2 分鐘願景主片</span>
+                  </span>
+                  <span class="vision-duration">02:02 · HD</span>
+                </div>
+              </button>
+            </div>
+
+            <aside class="vision-rail" aria-label="影片五大核心章節導覽">
+              <div class="vision-rail-head">FILM CHAPTERS // 點擊段落直接跳轉播放</div>
+              <div class="vision-chap-list">
+                <button type="button" class="vision-chap-btn is-active" data-start="0">
+                  <span class="vision-chap-time">00:00</span>
+                  <span class="vision-chap-text">從商專到科大：打破學用落差・走進現場</span>
+                </button>
+                <button type="button" class="vision-chap-btn" data-start="24">
+                  <span class="vision-chap-time">00:24</span>
+                  <span class="vision-chap-text">飛進 3D 產業聚落與空間導覽：師生與 AI 共創</span>
+                </button>
+                <button type="button" class="vision-chap-btn" data-start="71">
+                  <span class="vision-chap-time">01:11</span>
+                  <span class="vision-chap-text">程式交給 AI，時間留給思考：比賽・作品・證照</span>
+                </button>
+                <button type="button" class="vision-chap-btn" data-start="90">
+                  <span class="vision-chap-time">01:30</span>
+                  <span class="vision-chap-text">學校 ∞ 企業雙向閉環：同一間教室培育雙軌人才</span>
+                </button>
+                <button type="button" class="vision-chap-btn" data-start="105">
+                  <span class="vision-chap-time">01:45</span>
+                  <span class="vision-chap-text">不拼設備，拼最強悍的師資：造物者・打開另一扇門</span>
+                </button>
+              </div>
+              <div class="vision-rail-foot">
+                <a class="btn-blueprint vision-yt-link" href="https://www.youtube.com/watch?v=sOAPQF4ebiQ" target="_blank" rel="noopener">在 YouTube 開啟高畫質影片 ↗</a>
+              </div>
+            </aside>
+          </div>
+        </article>
       </div>
     </section>
 

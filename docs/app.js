@@ -317,4 +317,60 @@
         "</span>";
     });
   });
+
+  /* ── 6. Opening Vision Film: YouTube Click-to-Play Poster & Chapter Jumps ── */
+  const visionStage = document.getElementById("vision-stage");
+  const visionPlayBtn = document.getElementById("vision-play-btn");
+  const heroPlayVision = document.getElementById("hero-play-vision");
+  const visionChapterBtns = Array.from(document.querySelectorAll(".vision-chap-btn[data-start]"));
+
+  function setActiveChapter(startSec) {
+    visionChapterBtns.forEach(function (btn) {
+      const match = Number(btn.getAttribute("data-start") || 0) === startSec;
+      btn.classList.toggle("is-active", match);
+    });
+  }
+
+  function playVisionFilm(startSec) {
+    if (!visionStage) return;
+    const sec = Number(startSec) || 0;
+    setActiveChapter(sec);
+    const params = "autoplay=1&rel=0&playsinline=1" + (sec > 0 ? "&start=" + sec : "");
+    const src = "https://www.youtube.com/embed/sOAPQF4ebiQ?" + params;
+
+    let iframe = visionStage.querySelector("iframe");
+    if (!iframe) {
+      iframe = document.createElement("iframe");
+      iframe.title = "國立臺中科技大學《造物者 THE MAKERS》AI 跨界造物願景短片";
+      iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+      iframe.referrerPolicy = "strict-origin-when-cross-origin";
+      iframe.allowFullscreen = true;
+      visionStage.innerHTML = "";
+      visionStage.appendChild(iframe);
+    }
+    iframe.src = src;
+  }
+
+  if (visionPlayBtn) {
+    visionPlayBtn.addEventListener("click", function () {
+      playVisionFilm(0);
+    });
+  }
+
+  visionChapterBtns.forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      playVisionFilm(Number(btn.getAttribute("data-start") || 0));
+    });
+  });
+
+  if (heroPlayVision) {
+    heroPlayVision.addEventListener("click", function (ev) {
+      const target = document.getElementById("vision-film");
+      if (target) {
+        ev.preventDefault();
+        target.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+      playVisionFilm(0);
+    });
+  }
 })();
